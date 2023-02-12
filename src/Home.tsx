@@ -3,30 +3,32 @@ import React from 'react'
 import Background from './assets/fundo1.png';
 import Perfil from './assets/perfil.jpg';
 
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+
 function Home(){
 
     return(
-        <div>
-                <nav className='bg-sky-900 text-white border-b-4'>
+        <div className=''>
+                <nav className='bg-sky-900 text-white border-b-4 sticky top-0 hover:bg-sky-800 transition duration-1000'>
                     <ul className='flex flex-row justify-center'>
-                        <li className='mr-3 ml-3 p-2'>INICIO</li>
-                        <li className='mr-3 ml-3 p-2'>SOBRE</li>
-                        <li className='mr-3 ml-3 p-2'>SKILLS</li>
-                        <li className='mr-3 ml-3 p-2'>EXPERIÊNCIA</li>
-                        <li className='mr-3 ml-3 p-2'>PORTIFÓLIO</li>
-                        <li className='mr-3 ml-3 p-2'>CONTATO</li>
-                        <li className='mr-3 ml-3 p-2'>ICON GH</li>
-                        <li className='mr-3 ml-3 p-2'>ICON LK</li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>INICIO</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>SOBRE</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>SKILLS</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>EXPERIÊNCIA</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>PORTIFÓLIO</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>CONTATO</span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='text-2xl hover:text-sky-200 transition duration-300'><BsGithub /></span></li>
+                        <li className='mr-3 ml-3 p-2'><span className='text-2xl hover:text-sky-200 transition duration-300'><BsLinkedin /></span></li>
                     </ul>
                 </nav>
 
-                <div id="fundo">
+                <div id="fundo" className=''>
 
                     <div className='text-2xl flex flex-col justify-center items-center h-full text-900'>
                         <div className='font-bold'>PORTFOLIO</div>
-                        <div className='text-7xl font-extrabold text'>Kaique Miranda</div>
-                        <div className='pb-2 pt-2'>Desenvolvedor front-end</div>
-                        <div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black'>DOWNLOAD CV</div>
+                            <div className='text-7xl font-extrabold text'>Kaique Miranda</div>
+                            <div className='pb-2 pt-2'>Desenvolvedor front-end</div>
+                        <div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500'>DOWNLOAD CV</div>
                     </div>
 
                     
