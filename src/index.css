@@ -7,7 +7,7 @@
 }
 
 #fundo {
-    background: url('./assets/fundo1.png');
+    background: url('./assets/fundo.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
@@ -20,4 +20,8 @@
     background-position: top;
     transform: translateY();
     transition: 3.00s;
+}
+
+.imagem {
+    max-width: 600px;
 }
