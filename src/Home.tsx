@@ -8,6 +8,10 @@ import Portfolio from './assets/home.png'
 
 import Post from './components/Post';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Contato from './components/Contato';
+
+import { Fade } from "react-awesome-reveal";
 
 
 
@@ -40,7 +44,8 @@ function Home(){
                 </div>
 
                 <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4' id="sobre">
-                    <div className='text-center p-5 text-3xl'>SOBRE</div>
+                <Fade direction="right"><div className='text-center p-5 text-3xl'>SOBRE</div></Fade>
+                    <Fade direction="right">
                     <div className='flex flex-row justify-center w-6/12 mx-auto items-center'>
                         <div><img className='rounded-full mx-auto' width="150px" src={Perfil} /></div>
                         <div className='w-10/12 ml-5 mr-5 text-lg'>Busco desafios visando desenvolvimento pessoal e profissional, atuando na concepção e desenvolvimento
@@ -48,6 +53,8 @@ function Home(){
                         buscando soluções e resultados cada vez melhores.
                         </div>
                     </div>
+                    </Fade>
+                    <Fade direction="right">
                     <div className='flex flex-row justify-evenly mt-10'>
                         <div className='flex flex-col'>
                         <div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Nome:</span> <br/>Kaique Miranda</div>
@@ -60,7 +67,9 @@ function Home(){
                         <div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Linkedin:</span> <br/>Kaique Miranda</div>
                         </div>
                     </div>
+                    </Fade>
 
+                    <Fade direction="right">
                     <div className='text-center p-5 text-3xl' id="skills">SKILLS </div>
 
                     <div className='flex flex-row justify-center text-xl text-white mb-5'>
@@ -75,22 +84,32 @@ function Home(){
                         <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
                         <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
                     </div>
+                    </Fade>
                 </div>
-
+                
                 <div className='text-black' id="experiencias">
+                <Fade direction="left">
                     <div className='text-center p-5 text-3xl'>EXPERIÊNCIAS </div>
+                    </Fade>
                         
                     <div className='flex flex-col justify-center items-center'>
-                    <div className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>Formação acadêmica</div>
-                        <div className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
+                    <div>Formação acadêmica</div>
+                    </Fade>
+                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <div>
                             <div>Graduação em <strong>Ciências da Computação</strong></div>
                             <div>Inicio: fev/2019 - Conclusão: dez/2022</div>
                             <div>Universidade Cidade de São Paulo | UNICID</div>
                         </div>
+                        </Fade>
                     
-
-                    <div className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>Experiência profissional</div>
-                        <div className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
+                    <div >Experiência profissional</div>
+                    </Fade>
+                    
+                    <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <div>
                             <div><strong>OLX BRASIL</strong> - Empresa de classificados</div>
                             <div>Estágio Analista em desenvolvimento de sistemas | Nov/2021 - Dez/2022</div>
                             <div>+ Atuação no Time de operações da Anapro - Desenvolvimento de instâncias para incorporadoras;</div>
@@ -98,52 +117,68 @@ function Home(){
                             <div>+ Desenvolvimentos de templates para os contratos (utilizando HTML, CSS, Javascript e linguagem própria do sistema);</div>
                             <div>+ Relacionamento com clientes.</div>
                         </div>
+                        </Fade>
 
-                        <div className='bg-slate-100 border-l-4 border- border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <div>
                             <div><strong>ONLAB STUDIO</strong> - Agência de freelancer de desenvolvimento de softwares</div>
                             <div>Estágio em desenvolvimento Web | Ago/2021 - Nov/2021</div>
                             <div>+ Criação e desenvolvimento de sites responsivos; Atuação no front-end (HTML, CSS, Javascript, Bootstrap, React);</div>
                             <div>+ Desenvolvimento de temas para sites em Wordpress (PHP, Javascript, Ajax, jQuery);</div>
                             <div>+ Principal projeto Yappi: <a className='font-semibold' href="https://www.yappi.com.br/">https://www.yappi.com.br/</a></div>
                         </div>
+                        </Fade>
 
 
+                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
+                    <div>Certificados</div>
+                    </Fade>
 
-                    <div className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>Certificados</div>
-
-                    <div className='bg-slate-100 border-l-4 border- border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                    <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                    <div>
                             <div><strong>Curso desenvolvimento Web Full Stack </strong> - ProgramadorBR</div>
                             <div>Emissão em setembro/2022;</div>
                             <div>+ Front end: HTML, CSS, Javascript, jQuery, Bootstrap e React;</div>
                             <div>+ Back end: Firebase, Node Js e Mongo DB;</div>
                         </div>
+                        </Fade>
 
-                        <div className='bg-slate-100 border-l-4 border- border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <div>
                             <div><strong>Certificado Data visualization</strong> - Kaggle</div>
                             <div>Emissão em agosto/2022;</div>
                             <div>+ Python e bibliotecas como Matplotlib e seaborn. </div>
                         </div>
+                        </Fade>
 
-                        <div className='bg-slate-100 border-l-4 border- border-sky-900 p-3  mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
+                        <div>
                             <div><strong>Certificado Intro Machine Learning</strong> - Kaggle</div>
                             <div>Emissão em setembro/2022;</div>
                             <div>+ Python e bibliotecas como Pandas e scikit-learn.</div>
                         </div>
+                        </Fade>
                     </div>
                 </div>
+                
 
                 
                 <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4' id="portfolio">
+                    <Fade direction="right">
                     <div className='text-center p-5 text-3xl'>PORTFÓLIO</div>
                     
 
-                    <div className='flex flex-row flex-wrap ml-5 mr-5 justify-center'>
+                    <div className='flex flex-row flex-wrap ml-5 mr-5 justify-center pb-10'>
                        
                     <Post /><Post /><Post />
                     <Post /><Post /><Post />
                     </div>
+                    </Fade>
                 </div>
 
+                <Contato />
+
+                <Footer />
                 
         </div>
     )
