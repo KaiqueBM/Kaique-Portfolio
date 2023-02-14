@@ -1,29 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Background from './assets/fundo1.png';
 import Perfil from './assets/perfil.jpg';
 import Portfolio from './assets/home.png'
 
-import App1 from './assets/app_1.png'
 
-import { BsGithub, BsLinkedin, BsPlusCircleFill } from "react-icons/bs";
+
+import Post from './components/Post';
+import Navbar from './components/Navbar';
+
+
 
 function Home(){
 
+    
+
     return(
-        <div className=''>
-                <nav className='bg-sky-900 text-white border-b-4 sticky top-0 hover:bg-sky-800 transition duration-1000'>
-                    <ul className='flex flex-row justify-center'>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>INICIO</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>SOBRE</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>SKILLS</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>EXPERIÊNCIAS</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>PORTFÓLIO</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300'>CONTATO</span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='text-2xl hover:text-sky-200 transition duration-300'><BsGithub /></span></li>
-                        <li className='mr-3 ml-3 p-2'><span className='text-2xl hover:text-sky-200 transition duration-300'><BsLinkedin /></span></li>
-                    </ul>
-                </nav>
+        <div id="home">
+                <Navbar />
 
                 <div id="fundo" className=''>
 
@@ -45,7 +39,7 @@ function Home(){
 
                 </div>
 
-                <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4'>
+                <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4' id="sobre">
                     <div className='text-center p-5 text-3xl'>SOBRE</div>
                     <div className='flex flex-row justify-center w-6/12 mx-auto items-center'>
                         <div><img className='rounded-full mx-auto' width="150px" src={Perfil} /></div>
@@ -67,7 +61,7 @@ function Home(){
                         </div>
                     </div>
 
-                    <div className='text-center p-5 text-3xl'>SKILLS </div>
+                    <div className='text-center p-5 text-3xl' id="skills">SKILLS </div>
 
                     <div className='flex flex-row justify-center text-xl text-white mb-5'>
                         <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
@@ -83,7 +77,7 @@ function Home(){
                     </div>
                 </div>
 
-                <div className='text-black'>
+                <div className='text-black' id="experiencias">
                     <div className='text-center p-5 text-3xl'>EXPERIÊNCIAS </div>
                         
                     <div className='flex flex-col justify-center items-center'>
@@ -138,62 +132,15 @@ function Home(){
                     </div>
                 </div>
 
-                <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4'>
+                
+                <div className='flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4' id="portfolio">
                     <div className='text-center p-5 text-3xl'>PORTFÓLIO</div>
+                    
 
-                    <div className='flex flex-row flex-wrap ml-5 mr-5'>
-
-                        <div className='w-2/6 p-3 rounded-t-xl hover:transform hover:scale-105 transition duration-500'>
-                            <div className='relative'>
-                                <div className='absolute right-0 bg-sky-600 p-2 rounded-xl mt-2 mr-2 border-4 border-sky-700 hover:bg-sky-900 hover:border-sky-800 transition cursor-pointer flex flex-row'>MAIS DETALHES <span className='pt-1 ml-2'><BsPlusCircleFill /></span></div>
-                                <div className='absolute right-0 bottom-0 mb-3 mr-1 text-right'>
-                                    <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2 hover:bg-sky-900 hover:border-sky-800 transition cursor-pointer'>HTML</span>
-                                    <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2 hover:bg-sky-900 hover:border-sky-800 transition cursor-pointer'>HTML</span>
-                                    <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2 hover:bg-sky-900 hover:border-sky-800 transition cursor-pointer'>HTML</span>
-                                </div>
-                                <img className='w-full rounded-t-xl border-b-4' src={App1} />
-                            </div>
-                            <div className='bg-sky-900 text-center p-2 text-2xl rounded-b-xl'>TITULO LOREM IPSUM</div>
-                            
-                        </div>
-
-                        <div className='w-2/6 p-3 rounded-t-xl'>
-                            <div className='relative'>
-                                <div className='absolute right-0 bg-sky-600 p-2 rounded-xl mt-2 mr-2 border-4 border-sky-700'>MAIS DETALHES</div>
-                                <img className='w-full rounded-t-xl border-b-4' src={App1} />
-                            </div>
-                            <div className='bg-sky-900 text-center pt-2 pr-2 pl-2 text-2xl'>TITULO LOREM IPSUM</div>
-                            <div className='bg-sky-900 p-2 rounded-b-xl text-right'>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                            </div>
-                        </div>
-                        <div className='w-2/6 p-3 rounded-t-xl'>
-                            <div className='relative'>
-                                <div className='absolute right-0 bg-sky-600 p-2 rounded-xl mt-2 mr-2 border-4 border-sky-700'>MAIS DETALHES</div>
-                                <img className='w-full rounded-t-xl border-b-4' src={App1} />
-                            </div>
-                            <div className='bg-sky-900 text-center pt-2 pr-2 pl-2 text-2xl'>TITULO LOREM IPSUM</div>
-                            <div className='bg-sky-900 p-2 rounded-b-xl text-right'>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                            </div>
-                        </div>
-                        <div className='w-2/6 p-3 rounded-t-xl'>
-                            <div className='relative'>
-                                <div className='absolute right-0 bg-sky-600 p-2 rounded-xl mt-2 mr-2 border-4 border-sky-700'>MAIS DETALHES</div>
-                                <img className='w-full rounded-t-xl border-b-4' src={App1} />
-                            </div>
-                            <div className='bg-sky-900 text-center pt-2 pr-2 pl-2 text-2xl'>TITULO LOREM IPSUM</div>
-                            <div className='bg-sky-900 p-2 rounded-b-xl text-right'>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                                <span className='bg-sky-600 border-4 border-sky-700 pl-3 pr-3 rounded-xl ml-2 mr-2'>HTML</span>
-                            </div>
-                        </div>
-                        
+                    <div className='flex flex-row flex-wrap ml-5 mr-5 justify-center'>
+                       
+                    <Post /><Post /><Post />
+                    <Post /><Post /><Post />
                     </div>
                 </div>
 

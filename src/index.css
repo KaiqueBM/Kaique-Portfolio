@@ -6,6 +6,10 @@
     font-family: 'Roboto Mono';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #fundo {
     background: url('./assets/fundo.png');
     background-repeat: no-repeat;
