@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Background from './assets/fundo1.png';
 import Perfil from './assets/perfil.jpg';
 import Portfolio from './assets/home.png'
+import CV from './assets/Kaique_Miranda_CV.pdf'
 
 
 
@@ -12,6 +13,107 @@ import Footer from './components/Footer';
 import Contato from './components/Contato';
 
 import { Fade } from "react-awesome-reveal";
+import Experiencias from './components/Experiencias';
+
+import { Fragment } from "react";
+import {
+    Popover,
+    PopoverHandler,
+    PopoverContent,
+    Button,
+  } from "@material-tailwind/react";
+
+  import Typist from 'react-typist';
+
+interface Skills{
+    name: string,
+    nivel: number
+}[]
+
+const skills = [
+    {
+        "name": "GIT",
+        "nivel": 3
+    },{
+    "name": "HTML",
+    "nivel": 3
+},{
+    "name": "CSS",
+    "nivel": 3
+},{
+    "name": "Javascript",
+    "nivel": 3
+},{
+    "name": "Typescript",
+    "nivel": 2
+},{
+    "name": "React",
+    "nivel": 2
+},{
+    "name": "Vue.js",
+    "nivel": 2
+},{
+    "name": "Angular",
+    "nivel": 1
+},{
+    "name": "Bootstrap",
+    "nivel": 3
+},{
+    "name": "Tailwind",
+    "nivel": 2
+},{
+    "name": "Styled-components",
+    "nivel": 2
+},{
+    "name": "Scss",
+    "nivel": 1
+},{
+    "name": "jQuery",
+    "nivel": 2
+},{
+    "name": "PHP",
+    "nivel": 2
+},{
+    "name": "Node.js",
+    "nivel": 3
+},{
+    "name": "C#",
+    "nivel": 2
+},{
+    "name": "Python",
+    "nivel": 2
+},{
+    "name": "MongoDB",
+    "nivel": 1
+},{
+    "name": "Firebase",
+    "nivel": 2
+},{
+    "name": "MySQL",
+    "nivel": 2
+}
+]
+
+//const teste = skills.reverse()
+
+const posts = [{
+    "id": 0,
+    "title": "Teste titulo",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis tellus at diam.",
+    "image": "https://raw.githubusercontent.com/KaiqueBM/catalogo-de-filmes/master/assets/app_1.png",
+    "video": "",
+    "github": "",
+    "project": "",
+    "tags": [{
+        "name": "HTML"
+    },{
+        "name": "HTML"
+    },{
+        "name": "HTML"
+    }]
+}]
+
+console.log(posts)
 
 
 
@@ -27,12 +129,13 @@ function Home(){
 
                     <div className='flex flex-row justify-center items-center  h-full'>
                         <div className='mr-5'><img className='transition hover:-translate-y-3.5 duration-500 imagem' src={Portfolio} /></div>
-
+                        
                         <div className='text-3xl flex flex-col justify-center items-center h-full text-900 hover:-translate-y-3.5 transition duration-500 w-2/4'>
-                        <div className='font-bold'>PORTFOLIO</div>
+                        <Typist avgTypingDelay={50} className="text-center pb-5" ><div className='font-bold'>PORTFOLIO</div>
                             <div className='text-8xl font-extrabold text'>Kaique Miranda</div>
-                            <div className='pb-2 pt-2'>Desenvolvedor front end</div>
-                        <div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500'>DOWNLOAD CV</div>
+                            <div className='pb-2 pt-2'>Desenvolvedor front end</div></Typist>
+                            <a href={CV} download><div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500'>DOWNLOAD CV</div></a>
+                            
                     </div>
 
                     </div>
@@ -70,96 +173,39 @@ function Home(){
                     </Fade>
 
                     <Fade direction="right">
-                    <div className='text-center p-5 text-3xl' id="skills">SKILLS </div>
-
-                    <div className='flex flex-row justify-center text-xl text-white mb-5'>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
-                        <div className='bg-sky-700 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-800 ml-3 mr-3'>HTML</div>
+                    <div className='text-center p-5 text-3xl' id="skills">SKILLS 
+                        <Fragment>
+                            <Popover placement="bottom">
+                                <PopoverHandler>
+                                    <Button variant="gradient" className="transition hover:bg-slate-600 p-1 rounded-lg text-base bg-sky-900 ml-3 pl-3 pr-3">LEGENDA</Button>
+                                </PopoverHandler>
+                                <PopoverContent className="rounded-xl z-50 w-80 text-white uppercase">
+                                    <div className='bg-sky-800 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-900 ml-3 mr-3 mb-2 text-center'>Básico</div>
+                                    <div className='bg-sky-600 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-700 ml-3 mr-3 mb-2 text-center'>Intermediário</div>
+                                    <div className='bg-sky-400 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-500 ml-3 mr-3 mb-2 text-center'>Avançado</div>
+                                </PopoverContent>
+                                </Popover>
+                            </Fragment>
                     </div>
+
+                    <div className='flex flex-row flex-wrap container mx-auto justify-center text-xl text-white mb-5'>
+                        {skills.map((skill:Skills, index: number) => (
+                            
+                            skill.nivel === 3 && (<div className='bg-sky-400 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-500 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>) 
+                            || skill.nivel === 2 && (<div className='bg-sky-600 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-700 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)
+                            || skill.nivel === 1 && (<div className='bg-sky-800 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-900 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)
+                            
+                            
+                            ))}
+                    </div>
+
+
+
+                    <div></div>
                     </Fade>
                 </div>
                 
-                <div className='text-black' id="experiencias">
-                <Fade direction="left">
-                    <div className='text-center p-5 text-3xl'>EXPERIÊNCIAS </div>
-                    </Fade>
-                        
-                    <div className='flex flex-col justify-center items-center'>
-                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
-                    <div>Formação acadêmica</div>
-                    </Fade>
-                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                        <div>
-                            <div>Graduação em <strong>Ciências da Computação</strong></div>
-                            <div>Inicio: fev/2019 - Conclusão: dez/2022</div>
-                            <div>Universidade Cidade de São Paulo | UNICID</div>
-                        </div>
-                        </Fade>
-                    
-                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
-                    <div >Experiência profissional</div>
-                    </Fade>
-                    
-                    <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                        <div>
-                            <div><strong>OLX BRASIL</strong> - Empresa de classificados</div>
-                            <div>Estágio Analista em desenvolvimento de sistemas | Nov/2021 - Dez/2022</div>
-                            <div>+ Atuação no Time de operações da Anapro - Desenvolvimento de instâncias para incorporadoras;</div>
-                            <div>+ Administração de projetos e gerenciamentos de atividades;</div>
-                            <div>+ Desenvolvimentos de templates para os contratos (utilizando HTML, CSS, Javascript e linguagem própria do sistema);</div>
-                            <div>+ Relacionamento com clientes.</div>
-                        </div>
-                        </Fade>
-
-                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                        <div>
-                            <div><strong>ONLAB STUDIO</strong> - Agência de freelancer de desenvolvimento de softwares</div>
-                            <div>Estágio em desenvolvimento Web | Ago/2021 - Nov/2021</div>
-                            <div>+ Criação e desenvolvimento de sites responsivos; Atuação no front-end (HTML, CSS, Javascript, Bootstrap, React);</div>
-                            <div>+ Desenvolvimento de temas para sites em Wordpress (PHP, Javascript, Ajax, jQuery);</div>
-                            <div>+ Principal projeto Yappi: <a className='font-semibold' href="https://www.yappi.com.br/">https://www.yappi.com.br/</a></div>
-                        </div>
-                        </Fade>
-
-
-                    <Fade direction="left" className='text-center text-2xl bg-sky-600 w-6/12 pl-20 pr-20 pt-2 pb-2 rounded-lg text-white border-4 border-sky-700'>
-                    <div>Certificados</div>
-                    </Fade>
-
-                    <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                    <div>
-                            <div><strong>Curso desenvolvimento Web Full Stack </strong> - ProgramadorBR</div>
-                            <div>Emissão em setembro/2022;</div>
-                            <div>+ Front end: HTML, CSS, Javascript, jQuery, Bootstrap e React;</div>
-                            <div>+ Back end: Firebase, Node Js e Mongo DB;</div>
-                        </div>
-                        </Fade>
-
-                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                        <div>
-                            <div><strong>Certificado Data visualization</strong> - Kaggle</div>
-                            <div>Emissão em agosto/2022;</div>
-                            <div>+ Python e bibliotecas como Matplotlib e seaborn. </div>
-                        </div>
-                        </Fade>
-
-                        <Fade direction="left" className='bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 w-6/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500'>
-                        <div>
-                            <div><strong>Certificado Intro Machine Learning</strong> - Kaggle</div>
-                            <div>Emissão em setembro/2022;</div>
-                            <div>+ Python e bibliotecas como Pandas e scikit-learn.</div>
-                        </div>
-                        </Fade>
-                    </div>
-                </div>
+                <Experiencias />
                 
 
                 

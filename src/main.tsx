@@ -10,7 +10,7 @@ import SinglePost from './components/SinglePost'
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
+  //<React.StrictMode>
   <BrowserRouter>
     <Routes>
       <Route element={<App />}>
@@ -19,5 +19,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       </Route>
     </Routes>
   </BrowserRouter>
-</React.StrictMode>,
+//</React.StrictMode>
+,
 )
