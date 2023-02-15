@@ -82,13 +82,13 @@ const Post = (posts: PropsPosts) => {
               </div>
             </div>
           </DialogHeader>
-          <DialogBody className="bg-white rounded-b-xl container" divider>
+          <DialogBody className="bg-white rounded-b-xl container overflow-auto" divider>
             <div className="grid lg:grid-cols-2 gap-4">
               <div>
                 {props.video != null ? (
-                  <video className="w-full rounded-lg" controls>
-                    <source src={props.video} type="video/mp4" />
-                  </video>
+                    <iframe className="w-full lg:h-full h-96 rounded-lg" 
+                      src={`${props.video}?controls=0&loop=1&autoplay=1&mute=1`}>
+                    </iframe>
                 ) : (
                   <img className="rounded-lg w-full" src={props.image} />
                 )}

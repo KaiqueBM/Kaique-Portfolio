@@ -35,7 +35,7 @@ function Home() {
       <Header />
 
       <div
-        className="flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4"
+        className="flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4 border-b-4"
         id="sobre"
       >
         <Sobre />
@@ -46,16 +46,24 @@ function Home() {
       <Experiencias />
 
       <div
-        className="flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4"
+        className="flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4 border-b-4"
         id="portfolio"
       >
         <Fade direction="right">
           <div className="text-center p-5 text-3xl">PORTFÓLIO</div>
 
-          <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center pb-10">
+          <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center">
             {posts.map((post: any, index: number) => (
               <Post key={index} props={post} />
             ))}
+          </div>
+        </Fade>
+
+        <Fade direction="right">
+          <div className="flex justify-center pb-10 pt-5">
+            <button className="bg-sky-600 p-2 pl-5 pr-5 rounded-xl border-4 border-sky-700 text-white ml-2 hover:bg-sky-900 hover:border-sky-900 transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
+              CONFIRA MAIS PROJETOS NO GITHUB
+            </button>
           </div>
         </Fade>
       </div>
