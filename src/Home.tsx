@@ -1,10 +1,3 @@
-import React, { useState } from "react";
-
-import Background from "./assets/fundo1.png";
-
-
-
-
 import Post from "./components/Post";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -13,27 +6,22 @@ import Contato from "./components/Contato";
 import { Fade } from "react-awesome-reveal";
 import Experiencias from "./components/Experiencias";
 
-
-
-
 import Sobre from "./components/Sobre";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
-import {data} from "./data/DataPosts";
+import { data } from "./data/DataPosts";
 
-
-const posts = data
+const posts = data;
 
 interface Posts {
-    id: number;
-    title: string;
-    description: string;
-    image: string;
-    video: string;
-    github: string;
-    project: string;
-    tags: any;
-  
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  video: string;
+  github: string;
+  project: string;
+  tags: any;
 }
 [];
 
@@ -67,7 +55,6 @@ function Home() {
           <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center pb-10">
             {posts.map((post: any, index: number) => (
               <Post key={index} props={post} />
-              
             ))}
           </div>
         </Fade>

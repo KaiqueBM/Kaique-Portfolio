@@ -1,9 +1,35 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { useState } from "react";
+import { BsGithub, BsLinkedin, BsList } from "react-icons/bs";
 
 const Navbar = () => {
+  const [navbar, setNavbar] = useState("hidden");
+
+  function navbarResponsive(e: any) {
+    e.preventDefault();
+    if (navbar == "hidden") {
+      setNavbar("flex");
+    }
+    if (navbar == "flex") {
+      setNavbar("hidden");
+    }
+  }
+
   return (
     <nav className="bg-sky-900 text-white border-b-4 sticky top-0 hover:bg-sky-800 transition duration-1000 z-30 shadow-lg">
-      <ul className="flex flex-row justify-center">
+      <div className="lg:hidden flex flex-row justify-between items-center">
+        <div className="uppercase ml-2 text-xl">
+          <a href="#home">
+            <strong>Portfolio</strong> - Kaique Miranda
+          </a>
+        </div>
+        <BsList
+          className="text-5xl m-2 hover:bg-sky-900 cursor-pointer rounded-lg hover:text-sky-100 transition"
+          onClick={navbarResponsive}
+        />
+      </div>
+      <ul
+        className={`lg:flex lg:flex-row flex-col justify-center items-center ${navbar} transition`}
+      >
         <a href="#home">
           <li className="mr-3 ml-3 p-2">
             <span className="hover:border-b-2 hover:text-sky-200 hover:border-sky-200 transition duration-300">

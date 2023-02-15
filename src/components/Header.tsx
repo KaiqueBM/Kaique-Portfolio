@@ -25,9 +25,9 @@ const Header = () => {
               </div>
               <div className="pb-2 pt-2">Desenvolvedor front end</div>
             </Typist>
-            <div className="flex lg:flex-row flex-col flex-wrap lg:text-2xl text-center text-base">
+            <div className="flex lg:flex-row flex-col flex-wrap xl:text-2xl text-center text-base">
               <a href={CV} download>
-                <div className="border-4 pl-8 pr-8 pt-2 pb-2 lg:mb-0 mb-5 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 mr-1">
+                <div className="border-4 pl-8 pr-8 pt-2 pb-2 xl:mb-0 mb-5 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 mr-1">
                   DOWNLOAD CV
                 </div>
               </a>
