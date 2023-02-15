@@ -113,6 +113,17 @@ const posts = [{
     }]
 }]
 
+interface Posts{
+    id: number,
+    title: string,
+    description: string,
+    image: string,
+    video: string,
+    github: string,
+    project: string,
+    tags: any
+}[]
+
 console.log(posts)
 
 
@@ -134,7 +145,10 @@ function Home(){
                         <Typist avgTypingDelay={50} className="text-center pb-5" ><div className='font-bold'>PORTFOLIO</div>
                             <div className='text-8xl font-extrabold text'>Kaique Miranda</div>
                             <div className='pb-2 pt-2'>Desenvolvedor front end</div></Typist>
-                            <a href={CV} download><div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500'>DOWNLOAD CV</div></a>
+                            <div className='flex flex-row flex-wrap text-2xl'>
+                            <a href={CV} download><div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500 mr-1'>DOWNLOAD CV</div></a>
+                            <a href="Mailto:Kaiquemirandacp@gmail.com"><div className='border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:border-white hover:text-white transition-all duration-500 ml-1'>ENTRAR EM CONTATO</div></a>
+                            </div>
                             
                     </div>
 
@@ -150,10 +164,11 @@ function Home(){
                 <Fade direction="right"><div className='text-center p-5 text-3xl'>SOBRE</div></Fade>
                     <Fade direction="right">
                     <div className='flex flex-row justify-center w-6/12 mx-auto items-center'>
-                        <div><img className='rounded-full mx-auto' width="150px" src={Perfil} /></div>
-                        <div className='w-10/12 ml-5 mr-5 text-lg'>Busco desafios visando desenvolvimento pessoal e profissional, atuando na concepção e desenvolvimento
-                        de projetos na área de TI, e com isso, transformar e melhorar a vida de todos com o uso da tecnologia,
-                        buscando soluções e resultados cada vez melhores.
+                        <div><img className='rounded-full mx-auto' width="180px" src={Perfil} /></div>
+                        <div className='w-10/12 ml-5 mr-5 text-lg text-justify'>
+                        Desenvolvedor Front end com experiência em React.js, JavaScript, TypeScript, Styled Components, Tailwind CSS, Bootstrap e consumo de APIs REST. 
+                        Também possuo experiência com PHP e Wordpress e na parte do Back end utilizando Node.js e C#. Busco desafios visando desenvolvimento profissional, apaixonado em criar
+                        novas soluções com o uso da tecnologia. Formado em Ciência da Computação.
                         </div>
                     </div>
                     </Fade>
@@ -166,8 +181,8 @@ function Home(){
                         </div>
 
                         <div className='flex flex-col'>
-                        <div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Github:</span> <br/>Kaique Miranda</div>
-                        <div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Linkedin:</span> <br/>Kaique Miranda</div>
+                        <a href="https://github.com/KaiqueBM"><div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Github:</span> <br/>@KaiqueBM</div></a>
+                        <a href="https://www.linkedin.com/in/kaique-miranda-3b5247204/"><div className='border-l-4 pl-3 mb-5'><span className='uppercase text-xl'>Linkedin:</span> <br/>@KaiqueMiranda</div></a>
                         </div>
                     </div>
                     </Fade>
@@ -190,11 +205,11 @@ function Home(){
 
                     <div className='flex flex-row flex-wrap container mx-auto justify-center text-xl text-white mb-5'>
                         {skills.map((skill:Skills, index: number) => (
-                            
-                            skill.nivel === 3 && (<div className='bg-sky-400 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-500 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>) 
-                            || skill.nivel === 2 && (<div className='bg-sky-600 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-700 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)
-                            || skill.nivel === 1 && (<div className='bg-sky-800 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-900 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)
-                            
+                            <div key={index}>
+                            {skill.nivel === 3 && (<div className='bg-sky-400 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-500 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)} 
+                            {skill.nivel === 2 && (<div className='bg-sky-600 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-700 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)}
+                            {skill.nivel === 1 && (<div className='bg-sky-800 pl-5 pr-5 pt-1 pb-1 rounded-lg border-4 border-sky-900 ml-3 mr-3 mb-4 text-center transition hover:-translate-y-2'>{skill.name}</div>)}
+                            </div>
                             
                             ))}
                     </div>
@@ -215,9 +230,11 @@ function Home(){
                     
 
                     <div className='flex flex-row flex-wrap ml-5 mr-5 justify-center pb-10'>
-                       
-                    <Post /><Post /><Post />
-                    <Post /><Post /><Post />
+
+                    {posts.map((post:Posts) => (
+                                <Post key={post.id} props={post} />
+                            
+                            ))}
                     </div>
                     </Fade>
                 </div>
