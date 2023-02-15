@@ -86,7 +86,7 @@ const Post = (posts: PropsPosts) => {
             <div className="grid lg:grid-cols-2 gap-4">
               <div>
                 {props.video != null ? (
-                    <iframe className="w-full lg:h-full h-96 rounded-lg" 
+                    <iframe className="w-full h-100 rounded-lg" 
                       src={`${props.video}?controls=0&loop=1&autoplay=1&mute=1`}>
                     </iframe>
                 ) : (
@@ -114,7 +114,7 @@ const Post = (posts: PropsPosts) => {
                 <div className="sm:pb-10 pb-2 text-right flex sm:flex-row flex-col justify-end">
                   {props.video != null && (
                     <a href={props.video} className="sm:mb-0 mb-6">
-                      <span className="bg-red-500 p-2 pl-5 pr-5 rounded-xl border-4 border-red-600 text-white ml-2  hover:bg-red-800 hover:border-red-900 transition cursor-pointer">
+                      <span className="bg-red-500 p-2 pl-5 pr-5 rounded-xl border-4 border-red-600 text-white ml-2  hover:bg-red-800 hover:border-red-900 transition-all     cursor-pointer   ">
                         <BsYoutube className="inline-block text-xl -mt-1 mr-2" />
                         VIDEO
                       </span>
