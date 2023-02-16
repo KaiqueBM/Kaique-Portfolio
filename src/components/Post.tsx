@@ -56,7 +56,7 @@ const Post = (posts: PropsPosts) => {
         <div className="bg-white text-center p-2 text-xl uppercase text-black font-overpass font-semibold">
           {props.title}
         </div>
-        <div className="bg-white text-right p-2 text-sm rounded-b-xl uppercase flex flex-row flex-wrap justify-end">
+        <div className="bg-white text-right p-2 text-sm rounded-b-xl uppercase flex flex-row flex-wrap justify-end -mt-0.5">
         {tags.map(({ name }: any, index: number) => (
               <div key={index} className="md:mb-2 mb-3">
                 <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
@@ -114,7 +114,7 @@ const Post = (posts: PropsPosts) => {
 
                 <div className="sm:pb-10 pb-2 text-right flex sm:flex-row flex-col justify-end">
                   {props.video != null && (
-                    <a href={props.video} className="sm:mb-0 mb-6">
+                    <a href={props.video} className="sm:mb-0 mb-6 focus-visible:outline-0">
                       <span className="font-poppins font-semibold bg-white text-black p-2 pl-5 pr-5 rounded-xl border-2 border-black ml-2  hover:text-white hover:bg-black transition-all cursor-pointer">
                         <BsYoutube className="inline-block text-xl -mt-1 mr-2" />
                         VIDEO
@@ -122,7 +122,7 @@ const Post = (posts: PropsPosts) => {
                     </a>
                   )}
                   {props.github != null && (
-                    <a href={props.github} className="sm:mb-0 mb-6">
+                    <a href={props.github} className="sm:mb-0 mb-6 focus-visible:outline-0 ">
                       <span className="font-poppins font-semibold bg-white text-black p-2 pl-5 pr-5 rounded-xl border-2 border-black ml-2  hover:text-white hover:bg-black transition-all cursor-pointer">
                         <BsGithub className="inline-block text-xl -mt-1" />{" "}
                         REPOSITÓRIO
@@ -130,7 +130,7 @@ const Post = (posts: PropsPosts) => {
                     </a>
                   )}
                   {props.project != null && (
-                    <a href={props.project}>
+                    <a href={props.project} className="focus-visible:outline-0">
                       <span className="font-poppins font-semibold bg-white text-black p-2 pl-5 pr-5 rounded-xl border-2 border-black ml-2  hover:text-white hover:bg-black transition-all cursor-pointer">
                         <BsLaptopFill className="inline-block text-xl -mt-1 mr-2" />
                         PROJETO

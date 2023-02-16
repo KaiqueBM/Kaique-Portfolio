@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contato from "./components/Contato";
 
-import { Fade, Slide } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 import Experiencias from "./components/Experiencias";
 
 import Sobre from "./components/Sobre";
@@ -62,9 +62,11 @@ function Home() {
         </Slide>
 
           <div className="flex justify-center pb-10 pt-5">
+            <a href="https://github.com/KaiqueBM?tab=repositories">
             <button className="font-poppins bg-white p-2 pl-5 pr-5 rounded-xl border-2 border-black text-black ml-2 hover:bg-black hover:text-white transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
               CONFIRA MAIS PROJETOS NO GITHUB
             </button>
+            </a>
           </div>
       </div>
 
