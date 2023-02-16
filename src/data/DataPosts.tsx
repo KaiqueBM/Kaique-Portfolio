@@ -46,7 +46,7 @@ const dataPosts = [
     ],
   },{
     id: 2,
-    title: "Sitema de chamada - Android Studio",
+    title: "Sitema de chamada",
     description:
       "É uma aplicação mobile que funciona como uma chamada de aula. A primeira activity é para fazer um login, aonde você coloca o seu RA e a sua senha. Após fazer o login mostra os dados do aluno, como horário que fez login, nome, ra e a localização atual (lat e long). Com base nesses dados, ele vai ver se o aluno tem aula nesse dia. Caso tenha, se estiver dentro do horário da aula e na localização da sala, ele permite você registrar a presença, caso contrário aparece uma mensagem dizendo que você hoje não tem aula ou algo do gênero. É possível também consultar as matérias que você tem na sua grade.",
     image:

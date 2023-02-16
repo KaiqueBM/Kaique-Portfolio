@@ -51,7 +51,7 @@ function Home() {
       >
         <Slide duration={1500} triggerOnce>
           <>
-          <div className="text-center p-5 text-3xl">PORTFÓLIO</div>
+          <div className="text-center p-5 text-4xl font-poppins font-bold">PORTFÓLIO</div>
 
           <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center">
             {posts.map((post: any, index: number) => (
@@ -62,7 +62,7 @@ function Home() {
         </Slide>
 
           <div className="flex justify-center pb-10 pt-5">
-            <button className="bg-sky-600 p-2 pl-5 pr-5 rounded-xl border-4 border-sky-700 text-white ml-2 hover:bg-sky-900 hover:border-sky-900 transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
+            <button className="font-poppins bg-white p-2 pl-5 pr-5 rounded-xl border-2 border-black text-black ml-2 hover:bg-black hover:text-white transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
               CONFIRA MAIS PROJETOS NO GITHUB
             </button>
           </div>

@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="bg-sky-900 text-white border-b-4 sticky top-0 hover:bg-sky-800 transition duration-1000 z-30 shadow-lg">
       <div className="lg:hidden flex flex-row justify-between items-center">
-        <div className="uppercase ml-2 text-xl">
+        <div className="uppercase ml-2 text-xl font-roboto">
           <a href="#home">
             <strong>Portfolio</strong> - Kaique Miranda
           </a>
@@ -28,7 +28,7 @@ const Navbar = () => {
         />
       </div>
       <ul
-        className={`lg:flex lg:flex-row flex-col justify-center items-center ${navbar} transition`}
+        className={`lg:flex lg:flex-row flex-col justify-center items-center ${navbar} transition font-roboto font-semibold`}
       >
         <a href="#home">
           <li className="mr-3 ml-3 p-2">

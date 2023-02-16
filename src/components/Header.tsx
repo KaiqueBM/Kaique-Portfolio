@@ -19,20 +19,20 @@ const Header = () => {
               avgTypingDelay={50}
               className="text-center pb-5 hover:text-gray-800 transition"
             >
-              <div className="font-bold">PORTFOLIO</div>
-              <div className="lg:text-8xl text-6xl font-extrabold text">
+              <div className="font-bold font-poppins">PORTFOLIO</div>
+              <div className="lg:text-8xl text-6xl font-extrabold text font-poppins">
                 Kaique Miranda
               </div>
-              <div className="pb-2 pt-2">Desenvolvedor front end</div>
+              <div className="pb-2 pt-2 font-poppins">Desenvolvedor front end</div>
             </Typist>
             <div className="flex lg:flex-row flex-col flex-wrap xl:text-2xl text-center text-base">
               <a href={CV} download>
-                <div className="border-4 pl-8 pr-8 pt-2 pb-2 xl:mb-0 mb-5 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 mr-1">
+                <div className="font-poppins border-4 pl-8 pr-8 pt-2 pb-2 xl:mb-0 mb-5 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 mr-1">
                   DOWNLOAD CV
                 </div>
               </a>
               <a href="Mailto:Kaiquemirandacp@gmail.com">
-                <div className="border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 ml-1">
+                <div className="font-poppins border-4 pl-8 pr-8 pt-2 pb-2 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 ml-1">
                   ENTRAR EM CONTATO
                 </div>
               </a>
