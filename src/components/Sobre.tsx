@@ -4,7 +4,6 @@ import Perfil from "../assets/perfil.jpg";
 const Sobre = () => {
   return (
     <>
-        <Fade direction="right">
           <div className="text-center p-5 text-3xl">SOBRE</div>
           <div className="flex md:flex-row flex-col justify-center xl:w-7/12 md:w-10/12 w-full mx-auto items-center">
             <div>
@@ -23,8 +22,6 @@ const Sobre = () => {
               com o uso da tecnologia. Formado em Ciência da Computação.
             </div>
           </div>
-        </Fade>
-        <Fade direction="right">
           <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:ml-0 ml-10 mt-10">
             <div className="flex flex-col">
               <div className="border-l-4 pl-3 mb-5">
@@ -56,7 +53,6 @@ const Sobre = () => {
               </a>
             </div>
           </div>
-        </Fade>
     </>
   )
 }

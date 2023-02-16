@@ -6,7 +6,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 interface Skills {
   name: string;
@@ -100,7 +100,7 @@ const skills = [
 const Skills = () => {
   return (
     <>
-      <Fade direction="right">
+      <Slide duration={1500} triggerOnce>
         <div className="text-center p-5 text-3xl" id="skills">
           SKILLS
           <Fragment>
@@ -151,7 +151,7 @@ const Skills = () => {
         </div>
 
         <div></div>
-      </Fade>
+      </Slide>
     </>
   );
 };

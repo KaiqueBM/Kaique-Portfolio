@@ -8,7 +8,6 @@ const Contato = () => {
   return (
     <>
         <div className='text-black pb-10' id="contato">
-          <Fade direction="left">
                     <div className='text-center p-5 text-3xl'>CONTATOS </div>
 
                     <div></div>
@@ -27,7 +26,6 @@ const Contato = () => {
                         <span className='block text-lg'>@KaiqueMiranda</span>
                     </div></a>
                     </div>
-                    </Fade>
         </div>
     </>
   )

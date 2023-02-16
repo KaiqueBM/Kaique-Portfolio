@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contato from "./components/Contato";
 
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 import Experiencias from "./components/Experiencias";
 
 import Sobre from "./components/Sobre";
@@ -49,7 +49,8 @@ function Home() {
         className="flex flex-col justify-center pt-5 bg-gradient-to-bl from-sky-900 to-gray-900 text-white border-t-4 border-b-4"
         id="portfolio"
       >
-        <Fade direction="right">
+        <Slide duration={1500} triggerOnce>
+          <>
           <div className="text-center p-5 text-3xl">PORTFÓLIO</div>
 
           <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center">
@@ -57,15 +58,14 @@ function Home() {
               <Post key={index} props={post} />
             ))}
           </div>
-        </Fade>
+          </>
+        </Slide>
 
-        <Fade direction="right">
           <div className="flex justify-center pb-10 pt-5">
             <button className="bg-sky-600 p-2 pl-5 pr-5 rounded-xl border-4 border-sky-700 text-white ml-2 hover:bg-sky-900 hover:border-sky-900 transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
               CONFIRA MAIS PROJETOS NO GITHUB
             </button>
           </div>
-        </Fade>
       </div>
 
       <Contato />

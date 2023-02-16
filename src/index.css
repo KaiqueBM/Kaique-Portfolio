@@ -17,13 +17,13 @@
         height: 800px;
         background-position: bottom;
         transform: translateY();
-        transition: 3.00s;
+        transition: 5.00s;
     }
     
     #fundo:hover {
         background-position: top;
         transform: translateY();
-        transition: 3.00s;
+        transition: 5.00s;
     }
     
     .imagem {
