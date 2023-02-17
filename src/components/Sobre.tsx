@@ -4,7 +4,7 @@ import Perfil from "../assets/perfil.jpg";
 const Sobre = () => {
   return (
     <>
-          <div className="text-center p-5 text-3xl font-poppins font-bold">SOBRE</div>
+          <div className="text-center p-5 text-5xl font-poppins font-bold">SOBRE</div>
           <div className="flex md:flex-row flex-col justify-center xl:w-7/12 md:w-10/12 w-full mx-auto items-center">
             <div>
               <img

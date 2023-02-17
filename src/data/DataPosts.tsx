@@ -72,7 +72,7 @@ const dataPosts = [
       "Essa aplicação foi construida em React utilizando Typescript e Bootstrap, além do Axios para fazer a conexão com a API da database do Valorant, mostrando assim todos os cosméticos e coleções do jogo além dos mapas.",
     image:
       "https://www.imagemhost.com.br/images/2023/02/15/Screenshot_349.png",
-    video: "mEiXPhmVFvc",
+    video: "https://www.youtube.com/embed/mEiXPhmVFvc",
     github: "https://github.com/KaiqueBM/valorant_database_items",
     project: null,
     tags: [

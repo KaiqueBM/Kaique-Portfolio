@@ -8,7 +8,7 @@ const Contato = () => {
   return (
     <>
         <div className='text-black pb-10' id="contato">
-                    <div className='text-center p-5 text-4xl font-poppins font-bold'>CONTATOS </div>
+                    <div className='text-center p-5 text-5xl font-poppins font-bold'>CONTATOS </div>
 
                     <div></div>
                     

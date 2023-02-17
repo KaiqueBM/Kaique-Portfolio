@@ -102,7 +102,7 @@ const Skills = () => {
     <>
       <Slide duration={1500} triggerOnce>
         <div className="flex flex-row justify-center items-center mt-5 mb-5">
-        <div className="text-center text-4xl" id="skills">
+        <div className="text-center text-5xl" id="skills">
           <span className="font-poppins font-bold">SKILLS</span>
           </div>
           <Fragment>

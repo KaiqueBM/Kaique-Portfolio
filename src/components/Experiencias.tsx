@@ -3,10 +3,10 @@ import { Fade } from "react-awesome-reveal";
 const Experiencias = () => {
   return (
     <div className="text-black" id="experiencias">
-        <div className="text-center p-5 text-4xl font-poppins  font-bold">EXPERIÊNCIAS </div>
+        <div className="text-center p-5 text-5xl font-poppins  font-bold">EXPERIÊNCIAS </div>
 
       <div className="flex flex-col justify-center items-center">
-          <div className="text-center text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-20 pr-20 pt-2 pb-2 rounded-r-lg  border-l-4 border-sky-900 font-poppins font-semibold uppercase">Formação acadêmica</div>
+          <div className="text-left text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-3 pr-3 pt-2 pb-2 rounded-r-lg border-l-4 border-sky-900 font-poppins font-semibold uppercase">Formação acadêmica</div>
 
 
           <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
@@ -18,7 +18,7 @@ const Experiencias = () => {
           </div>
 
 
-          <div className="text-center text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-20 pr-20 pt-2 pb-2 rounded-r-lg  border-l-4 border-sky-900 font-poppins font-semibold uppercase">Experiência profissional</div>
+          <div className="text-left text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-3 pr-3  pt-2 pb-2 rounded-r-lg  border-l-4 border-sky-900 font-poppins font-semibold uppercase">Experiência profissional</div>
 
           <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
             <div>
@@ -65,7 +65,7 @@ const Experiencias = () => {
             </div>
           </div>
 
-          <div className="text-center text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-20 pr-20 pt-2 pb-2 rounded-r-lg  border-l-4 border-sky-900 font-poppins font-semibold uppercase">Certificados</div>
+          <div className="text-left text-2xl text-black bg-slate-300 lg:w-6/12 w-11/12 pl-3 pr-3  pt-2 pb-2 rounded-r-lg  border-l-4 border-sky-900 font-poppins font-semibold uppercase">Certificados</div>
 
           <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
             <div>
