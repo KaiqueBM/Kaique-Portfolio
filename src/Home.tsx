@@ -18,10 +18,12 @@ interface Posts {
   title: string;
   description: string;
   image: string;
-  video: string;
-  github: string;
-  project: string;
-  tags: any;
+  video: string | null;
+  github: string | null;
+  project: string | null;
+  tags: {
+    name: string
+  }[]
 }
 [];
 
@@ -56,7 +58,7 @@ function Home() {
             </div>
 
             <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center">
-              {posts.map((post: any, index: number) => (
+              {posts.map((post: Posts, index: number) => (
                 <Post key={index} props={post} />
               ))}
             </div>

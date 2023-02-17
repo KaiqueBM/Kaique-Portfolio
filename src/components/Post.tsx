@@ -18,15 +18,21 @@ interface PropsPosts {
     video: string | null;
     github: string | null;
     project: string | null;
-    tags: string[];
+    tags: {
+      name: string
+    }[]
   };
 }
 [];
 
+interface PropsTags{
+    name: string
+}
+
 const Post = (posts: PropsPosts) => {
+  
   const props = posts.props;
   const tags = props.tags;
-  console.log(tags);
 
   const [open, setOpen] = useState(false);
 
@@ -57,10 +63,10 @@ const Post = (posts: PropsPosts) => {
           {props.title}
         </div>
         <div className="bg-white text-right p-2 text-sm rounded-b-xl uppercase flex flex-row flex-wrap justify-end -mt-0.5">
-        {tags.map(({ name }: any, index: number) => (
+        {tags.map((tag: PropsTags , index: number) => (
               <div key={index} className="md:mb-2 mb-3">
                 <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
-                  {name}
+                  {tag.name}
                 </span>
               </div>
             ))}
@@ -96,10 +102,10 @@ const Post = (posts: PropsPosts) => {
               </div>
               <div>
                 <div className="text-right  text-white">
-                  {tags.map(({ name }: any, index: number) => (
+                  {tags.map((tag: PropsTags, index: number) => (
                     <div key={index} className="inline-block">
                       <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
-                        {name}
+                        {tag.name}
                       </span>
                     </div>
                   ))}
