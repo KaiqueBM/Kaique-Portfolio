@@ -27,8 +27,6 @@ interface Posts {
 }
 [];
 
-console.log(posts);
-
 function Home() {
   return (
     <div id="home">
