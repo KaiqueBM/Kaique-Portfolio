@@ -97,7 +97,7 @@ const dataPosts = [
     image:
       "https://www.imagemhost.com.br/images/2023/02/15/ecoleta.png",
     video: null,
-    github: "https://github.com/KaiqueBM/NLW-01-Ecoleta",
+    github: null,
     project: null,
     tags: [
       {
