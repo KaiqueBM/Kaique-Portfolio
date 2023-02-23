@@ -164,7 +164,7 @@ const dataPosts = [
         "https://raw.githubusercontent.com/KaiqueBM/fortnite_shop/master/assets/app_1.png",
       video: "https://www.youtube.com/embed/mdTjP9HbIG4",
       github: "https://github.com/KaiqueBM/fortnite_shop",
-      project: null,
+      project: "https://fortnite-shop.netlify.app/",
       tags: [
         {
           name: "React",
@@ -185,7 +185,7 @@ const dataPosts = [
       description:
         "Essa aplicação foi desenvolvida durante a NLW SETUP realizada pela Rockseat. É um controle de hábitos, você pode registrar todo os dias se você realizado um determinado hábito ou até adicionar um novo hábito à sua rotina. Foi feito a parte do back-end, do banco de dados e do front-end.",
       image:
-        "https://www.imagemhost.com.br/images/2023/02/15/app_1.png",
+        "https://www.imagemhost.com.br/images/2023/02/23/app_1.png",
       video: "https://www.youtube.com/embed/Hq9LD9CzNJM",
       github: "https://github.com/KaiqueBM/nlw-setup",
       project: null,
@@ -233,7 +233,7 @@ const dataPosts = [
         "https://raw.githubusercontent.com/KaiqueBM/catalogo-de-filmes/master/assets/app_1.png",
       video: "https://www.youtube.com/embed/oS-VuN9uDG0",
       github: "https://github.com/KaiqueBM/catalogo-de-filmes",
-      project: null,
+      project: "https://catalogo-de-filmes-kaique.netlify.app/",
       tags: [
         {
           name: "React",
