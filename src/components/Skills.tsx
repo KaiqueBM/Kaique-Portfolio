@@ -61,7 +61,7 @@ const skills = [
   },
   {
     name: "Scss",
-    nivel: 1,
+    nivel: 2,
   },
   {
     name: "jQuery",

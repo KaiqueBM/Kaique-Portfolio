@@ -185,7 +185,7 @@ const dataPosts = [
       description:
         "Essa aplicação foi desenvolvida durante a NLW SETUP realizada pela Rockseat. É um controle de hábitos, você pode registrar todo os dias se você realizado um determinado hábito ou até adicionar um novo hábito à sua rotina. Foi feito a parte do back-end, do banco de dados e do front-end.",
       image:
-        "https://www.imagemhost.com.br/images/2023/02/23/app_1.png",
+        "https://raw.githubusercontent.com/KaiqueBM/nlw-setup/master/assets/app_geral.png",
       video: "https://www.youtube.com/embed/Hq9LD9CzNJM",
       github: "https://github.com/KaiqueBM/nlw-setup",
       project: null,

@@ -30,7 +30,7 @@ const Sobre = () => {
               </div>
               <div className="border-l-4 pl-3 mb-5">
                 <span className="uppercase text-xl font-semibold">Nascimento:</span> <br />
-                <span className="font-light">01/03/2000 - 22 anos</span>
+                <span className="font-light">01/03/2000 - 23 anos</span>
               </div>
               <div className="border-l-4 pl-3 mb-5">
                 <span className="uppercase text-xl font-semibold">Local: </span> <br />
