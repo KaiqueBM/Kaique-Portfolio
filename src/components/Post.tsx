@@ -1,5 +1,11 @@
 import { Fragment, useState } from "react";
-import { BsGithub, BsYoutube, BsLaptopFill, BsXOctagon, BsPlusLg } from "react-icons/bs";
+import {
+  BsGithub,
+  BsYoutube,
+  BsLaptopFill,
+  BsXOctagon,
+  BsPlusLg,
+} from "react-icons/bs";
 
 import {
   Button,
@@ -19,18 +25,17 @@ interface PropsPosts {
     github: string | null;
     project: string | null;
     tags: {
-      name: string
-    }[]
+      name: string;
+    }[];
   };
 }
 [];
 
-interface PropsTags{
-    name: string
+interface PropsTags {
+  name: string;
 }
 
 const Post = (posts: PropsPosts) => {
-  
   const props = posts.props;
   const tags = props.tags;
 
@@ -50,10 +55,8 @@ const Post = (posts: PropsPosts) => {
               <BsPlusLg />
             </span>
             MAIS DETALHES{" "}
-            
           </div>
 
-          
           <img
             className="w-full rounded-t-xl border-b-4 border-black"
             src={props.image}
@@ -63,13 +66,13 @@ const Post = (posts: PropsPosts) => {
           {props.title}
         </div>
         <div className="bg-white text-right p-2 text-sm rounded-b-xl uppercase flex flex-row flex-wrap justify-end -mt-0.5">
-        {tags.map((tag: PropsTags , index: number) => (
-              <div key={index} className="md:mb-2 mb-3">
-                <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
-                  {tag.name}
-                </span>
-              </div>
-            ))}
+          {tags.map((tag: PropsTags, index: number) => (
+            <div key={index} className="md:mb-2 mb-3">
+              <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
+                {tag.name}
+              </span>
+            </div>
+          ))}
         </div>
 
         <Dialog
@@ -89,13 +92,17 @@ const Post = (posts: PropsPosts) => {
               </div>
             </div>
           </DialogHeader>
-          <DialogBody className="bg-white rounded-b-xl container overflow-auto" divider>
+          <DialogBody
+            className="bg-white rounded-b-xl container overflow-auto"
+            divider
+          >
             <div className="grid lg:grid-cols-2 gap-4">
               <div>
                 {props.video != null ? (
-                    <iframe className="w-full h-100 rounded-lg" 
-                      src={`${props.video}?controls=0&loop=1&autoplay=1&mute=1`}>
-                    </iframe>
+                  <iframe
+                    className="w-full h-100 rounded-lg"
+                    src={`${props.video}?controls=0&loop=1&autoplay=1&mute=1`}
+                  ></iframe>
                 ) : (
                   <img className="rounded-lg w-full" src={props.image} />
                 )}
@@ -113,14 +120,19 @@ const Post = (posts: PropsPosts) => {
                 <div className="text-xl pb-2 pt-2 font-poppins font-semibold">
                   Sobre o projeto:
                 </div>
-                <div className="text-justify font-overpass">{props.description}</div>
+                <div className="text-justify font-overpass">
+                  {props.description}
+                </div>
                 <div></div>
 
                 <hr className="border-2 mt-4 mb-6"></hr>
 
                 <div className="sm:pb-10 pb-2 text-right flex sm:flex-row flex-col justify-end">
                   {props.video != null && (
-                    <a href={props.video} className="sm:mb-0 mb-6 focus-visible:outline-0">
+                    <a
+                      href={props.video}
+                      className="sm:mb-0 mb-6 focus-visible:outline-0"
+                    >
                       <span className="font-poppins font-semibold bg-white text-black p-2 pl-5 pr-5 rounded-xl border-2 border-black ml-2  hover:text-white hover:bg-black transition-all cursor-pointer">
                         <BsYoutube className="inline-block text-xl -mt-1 mr-2" />
                         VIDEO
@@ -128,7 +140,10 @@ const Post = (posts: PropsPosts) => {
                     </a>
                   )}
                   {props.github != null && (
-                    <a href={props.github} className="sm:mb-0 mb-6 focus-visible:outline-0 ">
+                    <a
+                      href={props.github}
+                      className="sm:mb-0 mb-6 focus-visible:outline-0 "
+                    >
                       <span className="font-poppins font-semibold bg-white text-black p-2 pl-5 pr-5 rounded-xl border-2 border-black ml-2  hover:text-white hover:bg-black transition-all cursor-pointer">
                         <BsGithub className="inline-block text-xl -mt-1" />{" "}
                         REPOSITÓRIO

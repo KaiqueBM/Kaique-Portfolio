@@ -102,8 +102,8 @@ const Skills = () => {
     <>
       <Slide duration={1500} triggerOnce>
         <div className="flex flex-row justify-center items-center mt-5 mb-5">
-        <div className="text-center text-5xl" id="skills">
-          <span className="font-poppins font-bold">SKILLS</span>
+          <div className="text-center text-5xl" id="skills">
+            <span className="font-poppins font-bold">SKILLS</span>
           </div>
           <Fragment>
             <Popover placement="bottom">
@@ -128,8 +128,7 @@ const Skills = () => {
               </PopoverContent>
             </Popover>
           </Fragment>
-          </div>
-        
+        </div>
 
         <div className="flex flex-row flex-wrap container mx-auto justify-center text-xl text-white mb-5 font-roboto">
           {skills.map((skill: Skills, index: number) => (

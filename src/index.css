@@ -1,67 +1,67 @@
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-    }
-    
-    #fundo {
-        background: url('./assets/fundo.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 800px;
-        background-position: bottom;
-        transform: translateY();
-        transition: 5.00s;
-    }
-    
-    #fundo:hover {
-        background-position: top;
-        transform: translateY();
-        transition: 5.00s;
-    }
-    
-    .imagem {
-        max-width: 600px;
-    }
-    
-    .backdrop-blur-sm {
-        --tw-backdrop-blur: blur(5px)!important;
-    }
-    
-    .bg-black {
-        --tw-bg-opacity: 0.85;
-    }
-    
-     :root {
-        --primary: rgb(37, 37, 37);
-        --secondary: rgb(31, 141, 214);
-    }
-    /* Scrollbar styles */
-    /* Firefox */
-    
-    * {
-        scrollbar-width: thin;
-        scrollbar-color: var(--primary) var(--secondary);
-    }
-    /* Chrome, Edge, and Safari */
-    
-    *::-webkit-scrollbar {
-        width: 16px;
-    }
-    
-    *::-webkit-scrollbar-track {
-        background: var(--primary);
-    }
-    
-    *::-webkit-scrollbar-thumb {
-        background-color: var(--secondary);
-        border-radius: 20px;
-        border: 3px solid var(--primary);
-    }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#fundo {
+  background: url("./assets/fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  background-position: bottom;
+  transform: translateY();
+  transition: 5s;
+}
+
+#fundo:hover {
+  background-position: top;
+  transform: translateY();
+  transition: 5s;
+}
+
+.imagem {
+  max-width: 600px;
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(5px) !important;
+}
+
+.bg-black {
+  --tw-bg-opacity: 0.85;
+}
+
+:root {
+  --primary: rgb(37, 37, 37);
+  --secondary: rgb(31, 141, 214);
+}
+/* Scrollbar styles */
+/* Firefox */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--secondary);
+}
+/* Chrome, Edge, and Safari */
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 20px;
+  border: 3px solid var(--primary);
+}

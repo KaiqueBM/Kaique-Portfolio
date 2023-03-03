@@ -22,8 +22,8 @@ interface Posts {
   github: string | null;
   project: string | null;
   tags: {
-    name: string
-  }[]
+    name: string;
+  }[];
 }
 [];
 
