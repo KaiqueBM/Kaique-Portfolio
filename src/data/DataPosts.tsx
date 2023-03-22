@@ -163,7 +163,7 @@ const dataPosts = [
     description:
       "Essa aplicação foi desenvolvida consumindo a API da loja de itens do Fortnite. Basicamente é atualizado em tempo real com base na loja do jogo, mostrando todos os itens, bundles, com todos os detalhes. Consegue ver informações de preço, desconto, raridade, descrição e entre outras.",
     image:
-      "https://raw.githubusercontent.com/KaiqueBM/fortnite_shop/master/assets/app_1.png",
+      "https://raw.githubusercontent.com/KaiqueBM/fortnite_shop/master/assets/app_1_new.png",
     video: "https://www.youtube.com/embed/mdTjP9HbIG4",
     github: "https://github.com/KaiqueBM/fortnite_shop",
     project: "https://fortnite-shop.netlify.app/",
@@ -234,7 +234,7 @@ const dataPosts = [
     description:
       "Desenvolvi uma aplicação web de um catálogo de filmes onde você pode ver os filmes mais populares do momento, filtrar por gêneros, pesquisar um filme especifico e entre outras funções. Consumi a api da The Movies DB, uma api bem completa para o que eu queria fazer. Utilizei nesse projeto React, Typescript e Tailwind. A listagem dos filmes é por sua popularidade atualmente. Fiz um esquema de paginação, mostrando 20 filmes por página. Você pode também filtrar pelos gêneros, listando apenas filmes de ação, comédio, e entre outros. Também tem a opção de pesquisar por um filme especifico, podendo até pesquisar por um filme que ainda não lançou. E para finalizar, pode mudar a linguagem do site por meio de um botão na nav.",
     image:
-      "https://raw.githubusercontent.com/KaiqueBM/catalogo-de-filmes/master/assets/app_1_new.png",
+      "https://raw.githubusercontent.com/KaiqueBM/catalogo-de-filmes/master/assets/app_1_new_.png",
     video: "https://www.youtube.com/embed/oS-VuN9uDG0",
     github: "https://github.com/KaiqueBM/catalogo-de-filmes",
     project: "https://catalogo-de-filmes-kaique.netlify.app/",
