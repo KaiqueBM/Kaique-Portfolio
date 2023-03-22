@@ -159,6 +159,27 @@ const dataPosts = [
   },
   {
     id: 7,
+    title: "Clima do tempo",
+    description:
+      "Essa aplicação foi desenvolvida baseada no #BoraCodar da Rocketseat. Fora alguns ajustes responsivos, consumi duas APIs para alimentar o projeto, um em relação a previsão do tempo e outra da qualidade do ar. Além disso fiz um scriptizinho de Geolocalização onde o usuário pode permitir pegar a localização dele para retornar o clima naquela região. O app muda também a cor de acordo com o horário do dia.",
+    image: "https://raw.githubusercontent.com/KaiqueBM/Clima-em-React/master/assets/app_1.png",
+    video: null,
+    github: "https://github.com/KaiqueBM/Clima-em-React",
+    project: "http://www.ferragenspiratininga.com.br/",
+    tags: [
+      {
+        name: "React",
+      },
+      {
+        name: "JS",
+      },
+      {
+        name: "Axios",
+      }
+    ],
+  },
+  {
+    id: 8,
     title: "Loja do Fortnite",
     description:
       "Essa aplicação foi desenvolvida consumindo a API da loja de itens do Fortnite. Basicamente é atualizado em tempo real com base na loja do jogo, mostrando todos os itens, bundles, com todos os detalhes. Consegue ver informações de preço, desconto, raridade, descrição e entre outras.",
@@ -183,7 +204,7 @@ const dataPosts = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "NLW SETUP - Habits",
     description:
       "Essa aplicação foi desenvolvida durante a NLW SETUP realizada pela Rockseat. É um controle de hábitos, você pode registrar todo os dias se você realizado um determinado hábito ou até adicionar um novo hábito à sua rotina. Foi feito a parte do back-end, do banco de dados e do front-end.",
@@ -208,7 +229,7 @@ const dataPosts = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "FPVD",
     description:
       "Foi desenvolvido um site para a Federação Paulista de Voleibol para deficientes utilizando Wordpress, PHP e Javascript. Consegue ver as notícias mais recentes, todas as informações sobre a Federação, ver os clubes que participam da liga, os árbitros e até os projetos incetivados.",
@@ -229,7 +250,7 @@ const dataPosts = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     title: "Catálogo de filmes",
     description:
       "Desenvolvi uma aplicação web de um catálogo de filmes onde você pode ver os filmes mais populares do momento, filtrar por gêneros, pesquisar um filme especifico e entre outras funções. Consumi a api da The Movies DB, uma api bem completa para o que eu queria fazer. Utilizei nesse projeto React, Typescript e Tailwind. A listagem dos filmes é por sua popularidade atualmente. Fiz um esquema de paginação, mostrando 20 filmes por página. Você pode também filtrar pelos gêneros, listando apenas filmes de ação, comédio, e entre outros. Também tem a opção de pesquisar por um filme especifico, podendo até pesquisar por um filme que ainda não lançou. E para finalizar, pode mudar a linguagem do site por meio de um botão na nav.",
@@ -251,7 +272,7 @@ const dataPosts = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     title: "Yappi",
     description:
       "Aplicação criada para a empresa Yappi. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap, jQuery e Ajax. Além do blog, foi desenvolvido uma calculadora de juros composto, precisando criar um back end interno no WP, utilizando o Ajax para realizar a chamada.",

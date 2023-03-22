@@ -36,7 +36,7 @@ function Home() {
   const [changeButton, setChangeButton] = useState<string>("flex");
   function updatePosts(){
     setMorePosts(morePosts+3)
-    if(morePosts > (posts.length-6))
+    if(morePosts > (posts.length-3))
     {
       setChangeButton("none")
     }
