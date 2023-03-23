@@ -165,7 +165,7 @@ const dataPosts = [
     image: "https://raw.githubusercontent.com/KaiqueBM/Clima-em-React/master/assets/app_1.png",
     video: null,
     github: "https://github.com/KaiqueBM/Clima-em-React",
-    project: "http://www.ferragenspiratininga.com.br/",
+    project: "https://clima-do-tempo.netlify.app/",
     tags: [
       {
         name: "React",
