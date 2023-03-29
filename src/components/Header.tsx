@@ -1,6 +1,6 @@
 import React from "react";
 import CV from "../assets/Kaique_Miranda_CV.pdf";
-import Portfolio from "../assets/home.png";
+import Portfolio from "../assets/dev.png";
 import Typist from "react-typist";
 
 const Header = () => {

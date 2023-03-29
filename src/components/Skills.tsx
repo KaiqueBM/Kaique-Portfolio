@@ -8,6 +8,9 @@ import {
 
 import { Fade, Slide } from "react-awesome-reveal";
 
+
+import { GithubOriginalIcon, GithubOriginalWordmarkIcon } from "react-devicons";
+
 interface Skills {
   name: string;
   nivel: number;
@@ -129,6 +132,7 @@ const Skills = () => {
             </Popover>
           </Fragment>
         </div>
+        
 
         <div className="flex flex-row flex-wrap container mx-auto justify-center text-xl text-white mb-5 font-roboto">
           {skills.map((skill: Skills, index: number) => (
@@ -153,6 +157,7 @@ const Skills = () => {
         </div>
 
         <div></div>
+        <GithubOriginalWordmarkIcon color="white" />
       </Slide>
     </>
   );
