@@ -58,7 +58,7 @@ const Post = (posts: PropsPosts) => {
           </div>
 
           <img
-            className="w-full rounded-t-xl border-b-4 border-black"
+            className="w-full rounded-t-xl border-b-4 border-gray-800"
             src={props.image}
           />
         </div>

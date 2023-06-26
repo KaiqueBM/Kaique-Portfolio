@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Skills from "./components/Skills";
 import { data } from "./data/DataPosts";
 import { useState } from "react";
+import Cursos from "./components/Cursos";
 
 const posts = data;
 
@@ -91,6 +92,8 @@ function Home() {
          
         </div>
       </div>
+
+      <Cursos />
 
       <Contato />
 
