@@ -1,7 +1,5 @@
-import React from "react";
 import CV from "../assets/Kaique_Miranda_CV.pdf";
 import Portfolio from "../assets/dev.png";
-import Typist from "react-typist";
 
 const Header = () => {
   return (
@@ -15,10 +13,7 @@ const Header = () => {
         </div>
 
         <div className="text-3xl flex flex-col justify-center items-center h-full text-900 hover:-translate-y-3.5 transition duration-500 w-2/4">
-          <Typist
-            avgTypingDelay={120}
-            className="text-center pb-5 hover:text-gray-800 transition"
-          >
+          
             <div className="font-bold font-poppins">PORTFOLIO</div>
             <div className="lg:text-8xl text-6xl font-extrabold text font-poppins">
               Kaique Miranda
@@ -26,7 +21,6 @@ const Header = () => {
             <div className="pb-2 pt-2 font-poppins">
               Desenvolvedor front end
             </div>
-          </Typist>
           <div className="flex lg:flex-row flex-col flex-wrap xl:text-2xl text-center text-base">
             <a href={CV} download>
               <div className="font-poppins border-4 sm:pl-8 sm:pr-8 pl-2 pr-2 pt-2 pb-2 xl:mb-0 mb-5 rounded-full border-black hover:bg-black hover:text-white transition-all duration-500 mr-1">

@@ -6,10 +6,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 
-import { Fade, Slide } from "react-awesome-reveal";
-
-
-import { GithubOriginalIcon, GithubOriginalWordmarkIcon } from "react-devicons";
+import { Slide } from "react-awesome-reveal";
 
 interface Skills {
   name: string;
@@ -157,7 +154,6 @@ const Skills = () => {
         </div>
 
         <div></div>
-        <GithubOriginalWordmarkIcon color="white" />
       </Slide>
     </>
   );
