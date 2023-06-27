@@ -1,7 +1,5 @@
 import { BsFillPersonFill } from "react-icons/bs";
-import { BsGithub, BsLinkedin, BsList } from "react-icons/bs";
-
-import { Fade } from "react-awesome-reveal";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Contato = () => {
   return (

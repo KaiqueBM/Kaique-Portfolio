@@ -1,5 +1,3 @@
-import { Fade } from "react-awesome-reveal";
-
 const Experiencias = () => {
   return (
     <div className="text-black" id="experiencias">

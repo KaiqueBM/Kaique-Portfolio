@@ -1,4 +1,3 @@
-import { Fade } from "react-awesome-reveal";
 import Perfil from "../assets/perfil.jpg";
 
 const Sobre = () => {

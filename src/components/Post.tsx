@@ -8,11 +8,9 @@ import {
 } from "react-icons/bs";
 
 import {
-  Button,
   Dialog,
   DialogHeader,
   DialogBody,
-  DialogFooter,
 } from "@material-tailwind/react";
 
 interface PropsPosts {

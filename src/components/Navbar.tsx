@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin, BsList } from "react-icons/bs";
 const Navbar = () => {
   const [navbar, setNavbar] = useState("hidden");
 
-  function navbarResponsive(e: any) {
+  function navbarResponsive(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (navbar == "hidden") {
       setNavbar("flex");
@@ -14,7 +14,7 @@ const Navbar = () => {
     }
   }
 
-  function navbarFechar(e: any) {
+  function navbarFechar() {
     if (navbar == "flex"){
       setNavbar("hidden");
     }
