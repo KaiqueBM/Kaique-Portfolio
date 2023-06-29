@@ -4,7 +4,7 @@ const dataPosts = [
     title: "Sistema de leitor - CRUD",
     description:
       "É uma aplicação para java na qual foi montada no modelo MVC. Ao executar o projeto, ele abre uma interface gráfica construida em java na qual você pode fazer iserções, consultas, listagens, updates, e entre outros dos leitores.",
-    image: "https://www.imagemhost.com.br/images/2023/02/15/crud.png",
+    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/leitor.png",
     video: null,
     github: "https://github.com/KaiqueBM/Sistema-Leitor-CRUD",
     project: null,
@@ -25,7 +25,7 @@ const dataPosts = [
     title: "Mural de notas",
     description:
       "É uma aplicação web que serve de mural de notas. Basicamente, você tem uma página principal com um formulário na qual você pode usar colocar um título e uma descrição para uma nota e adicionar na tela. Em baixo, tem todas as notas adicionadas. O projeto ele tem integração entre o back-end e o front-end para o processamento das requisições, além de ser responsivo e tem armazenamento localstorage.",
-    image: "https://www.imagemhost.com.br/images/2023/02/15/Screenshot_350.png",
+    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/mural.png",
     video: "https://www.youtube.com/embed/pbH3vCsswhY",
     github: "https://github.com/KaiqueBM/Mural-De-Notas",
     project: null,
@@ -49,7 +49,7 @@ const dataPosts = [
     title: "Sitema de chamada",
     description:
       "É uma aplicação mobile que funciona como uma chamada de aula. A primeira activity é para fazer um login, aonde você coloca o seu RA e a sua senha. Após fazer o login mostra os dados do aluno, como horário que fez login, nome, ra e a localização atual (lat e long). Com base nesses dados, ele vai ver se o aluno tem aula nesse dia. Caso tenha, se estiver dentro do horário da aula e na localização da sala, ele permite você registrar a presença, caso contrário aparece uma mensagem dizendo que você hoje não tem aula ou algo do gênero. É possível também consultar as matérias que você tem na sua grade.",
-    image: "https://www.imagemhost.com.br/images/2023/02/15/Android.png",
+    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/chamada.png",
     video: null,
     github: "https://github.com/KaiqueBM/Sistema-De-Chamada-De-Sala",
     project: null,
