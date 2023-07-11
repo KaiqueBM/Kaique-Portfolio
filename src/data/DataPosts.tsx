@@ -70,7 +70,7 @@ const dataPosts = [
     title: "Valorant - Database",
     description:
       "Essa aplicação foi construida em React utilizando Typescript e Tailwind, além do Axios para fazer a conexão com a API da database do Valorant, mostrando assim todos os cosméticos e coleções do jogo além dos mapas. Pode também consultar todas as informações dos agentes do jogo.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/valorant_database_items/master/src/assets/app_1.png",
+    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/valorant.png",
     video: "https://www.youtube.com/embed/mEiXPhmVFvc",
     github: "https://github.com/KaiqueBM/valorant_database_items",
     project: "https://valorant-database.netlify.app/",
@@ -160,7 +160,7 @@ const dataPosts = [
     title: "Clima do tempo",
     description:
       "Essa aplicação foi desenvolvida baseada no #BoraCodar da Rocketseat. Fora alguns ajustes responsivos, consumi duas APIs para alimentar o projeto, um em relação a previsão do tempo e outra da qualidade do ar. Além disso fiz um scriptizinho de Geolocalização onde o usuário pode permitir pegar a localização dele para retornar o clima naquela região. O app muda também a cor de acordo com o horário do dia.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/Clima-em-React/master/assets/app_1.png",
+    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/clima.png",
     video: null,
     github: "https://github.com/KaiqueBM/Clima-em-React",
     project: "https://clima-do-tempo.netlify.app/",
@@ -182,7 +182,7 @@ const dataPosts = [
     description:
       "Essa aplicação foi desenvolvida consumindo a API da loja de itens do Fortnite. Basicamente é atualizado em tempo real com base na loja do jogo, mostrando todos os itens, bundles, com todos os detalhes. Consegue ver informações de preço, desconto, raridade, descrição e entre outras.",
     image:
-      "https://www.imagemhost.com.br/images/2023/03/30/432423.png",
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/fortnite.png",
     video: "https://www.youtube.com/embed/mdTjP9HbIG4",
     github: "https://github.com/KaiqueBM/fortnite_shop",
     project: "https://fortnite-shop.netlify.app/",
@@ -207,7 +207,7 @@ const dataPosts = [
     description:
       "Essa aplicação foi desenvolvida durante a NLW SETUP realizada pela Rockseat. É um controle de hábitos, você pode registrar todo os dias se você realizado um determinado hábito ou até adicionar um novo hábito à sua rotina. Foi feito a parte do back-end, do banco de dados e do front-end.",
     image:
-      "https://raw.githubusercontent.com/KaiqueBM/nlw-setup/master/assets/app_geral.png",
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/habitos.png",
     video: "https://www.youtube.com/embed/Hq9LD9CzNJM",
     github: "https://github.com/KaiqueBM/nlw-setup",
     project: null,
