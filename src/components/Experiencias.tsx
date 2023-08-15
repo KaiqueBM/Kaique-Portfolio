@@ -25,32 +25,19 @@ const Experiencias = () => {
 
         <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
           <div>
-            <span className="font-semibold">PROJETOS COMO FREELANCER</span>
+            <span className="font-semibold">NOT A STARTUP</span> - Startup de
+            marketing digital
           </div>
-          <div>+ Atualmente atuando como freelancer para o desenvolvimento de alguns projetos/aplicações;</div>
-          <br></br>
+          <div>Desenvolvedor de software | Mar/2023 - Atualmente</div>
+          <div>+ Implementação e manutenção do banco de dados com MongoDB;</div>
           <div>
-          <span className="font-semibold">Not a startup</span> | Mar/2023 -
-            Atualmente
-          </div>
-          <div>
-            + Atuando na área de desenvolvedor, com funções na parte do backend e frontend;
-          </div>
-          <div>+ Otimizando e melhorando páginas de WP;</div>
-          <div>
-            + Automatizando e integrando soluções com Node.js, Javascript, N8N e a lib Baileys;
-          </div>
-          <div>+ Criação, inserção e manutenção do banco de dados com MongoDB.</div>
-              <br></br>
-          <div>
-          <span className="font-semibold">Federação Paulista de voileibol</span> | Fev/2023 -
-            Fev
+            + Automatizando e integrando soluções com Python, Javascript e N8N,
+            além de gerenciamento de fila de execução com RabbitMQ;
           </div>
           <div>
-            + Desenvolvido um site com as melhores práticas para a FPVD;
-          </div>
-          <div>
-            + Criado sistemas de notícias, clubes e arbítros com PHP.
+            + Desenvolvimento de aplicações em Wordpress, utilizando PHP e
+            Javascript, inclusive uma área de painéis para consulta de
+            relatórios e dashboards criados com o Looker Studio;
           </div>
         </div>
 
@@ -60,11 +47,11 @@ const Experiencias = () => {
             classificados
           </div>
           <div>
-            Estágio assistente de operações da Anapro | Nov/2021 -
-            Dez/2022
+            Estágio assistente de operações da Anapro | Nov/2021 - Dez/2022
           </div>
           <div>
-            + Desenvolvimento de instâncias para incorporadoras, implantação de unidades e configuração de fluxo de vendas;
+            + Desenvolvimento de instâncias para incorporadoras, implantação de
+            unidades e configuração de fluxo de vendas;
           </div>
           <div>
             + Desenvolvimentos de templates para os contratos (utilizando HTML,
@@ -79,24 +66,20 @@ const Experiencias = () => {
             <span className="font-semibold">ONLAB STUDIO</span> - Agência de
             marketing e desenvolvimento de aplicações
           </div>
-          <div>Estágio em desenvolvimento web frontend | Ago/2021 - Nov/2021</div>
           <div>
-            + Criação e desenvolvimento de sites responsivos (HTML, CSS, Javascript, Bootstrap, React);
+            Estágio em desenvolvimento web frontend | Ago/2021 - Nov/2021
+          </div>
+          <div>
+            + Criação e desenvolvimento de sites responsivos (HTML, CSS,
+            Javascript, Bootstrap, React);
           </div>
           <div>
             + Desenvolvimento de temas para sites em Wordpress (PHP, Javascript,
             Ajax, jQuery);
           </div>
-          <div>
-            +  Manutenção e otimizações em páginas de WP.
-          </div>
+          <div>+ Manutenção e otimizações em páginas de WP.</div>
         </div>
-        
-
       </div>
-      
-
-      
     </div>
   );
 };

@@ -15,12 +15,12 @@ const Sobre = () => {
           />
         </div>
         <div className="w-10/12 ml-5 mr-5 text-lg text-justify font-overpass font-light">
-          Desenvolvedor Front end com experiência em React.js, JavaScript,
-          TypeScript, Styled Components, Tailwind CSS, Bootstrap e consumo de
-          APIs REST. Também possuo experiência com PHP e Wordpress e na parte do
-          Back end utilizando Node.js e C#. Busco desafios visando
-          desenvolvimento profissional, apaixonado em criar novas soluções com o
-          uso da tecnologia. Formado em Ciência da Computação.
+          Sou um desenvolvedor de software com experiência na parte do front end
+          utilizando React.js, TypeScript, Tailwind CSS e consumo de APIs REST.
+          Também possuo experiência no back end utilizando Python, Node.js e
+          Python, além de banco de dados como MongoDB e MySQL. Atualmente
+          trabalho na área em uma startup, arquitetando e colaborando com a
+          equipe em projetos relacionados ao marketing digital.
         </div>
       </div>
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:ml-0 ml-10 mt-10">
