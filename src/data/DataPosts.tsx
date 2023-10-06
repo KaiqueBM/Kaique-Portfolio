@@ -164,6 +164,32 @@ const dataPosts = [
   },
 
   {
+    id: 20,
+    title: "Mundo de Maria",
+    description:
+      "Foi desenvolvido um site em Wordpress para a loja Mundo de Maria, utilizando bastante PHP, elementor e um pouco de Javascript. Como eles vendem produtos, todo o script teve que ser feito em torno do plugin WooCommerce.",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/mundodemaria.png",
+    video: null,
+    github: null,
+    project: "https://mundodemaria.store/",
+    tags: [
+      {
+        name: "JS",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "WP",
+      },
+      {
+        name: "WooCommerce",
+      },
+    ],
+  },
+
+  {
     id: 7,
     title: "Clima do tempo",
     description:
