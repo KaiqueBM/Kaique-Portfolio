@@ -4,7 +4,8 @@ const dataPosts = [
     title: "Sistema de leitor - CRUD",
     description:
       "É uma aplicação para java na qual foi montada no modelo MVC. Ao executar o projeto, ele abre uma interface gráfica construida em java na qual você pode fazer iserções, consultas, listagens, updates, e entre outros dos leitores.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/leitor.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/leitor.png",
     video: null,
     github: "https://github.com/KaiqueBM/Sistema-Leitor-CRUD",
     project: null,
@@ -25,7 +26,8 @@ const dataPosts = [
     title: "Mural de notas",
     description:
       "É uma aplicação web que serve de mural de notas. Basicamente, você tem uma página principal com um formulário na qual você pode usar colocar um título e uma descrição para uma nota e adicionar na tela. Em baixo, tem todas as notas adicionadas. O projeto ele tem integração entre o back-end e o front-end para o processamento das requisições, além de ser responsivo e tem armazenamento localstorage.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/mural.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/mural.png",
     video: "https://www.youtube.com/embed/pbH3vCsswhY",
     github: "https://github.com/KaiqueBM/Mural-De-Notas",
     project: null,
@@ -49,7 +51,8 @@ const dataPosts = [
     title: "Sitema de chamada",
     description:
       "É uma aplicação mobile que funciona como uma chamada de aula. A primeira activity é para fazer um login, aonde você coloca o seu RA e a sua senha. Após fazer o login mostra os dados do aluno, como horário que fez login, nome, ra e a localização atual (lat e long). Com base nesses dados, ele vai ver se o aluno tem aula nesse dia. Caso tenha, se estiver dentro do horário da aula e na localização da sala, ele permite você registrar a presença, caso contrário aparece uma mensagem dizendo que você hoje não tem aula ou algo do gênero. É possível também consultar as matérias que você tem na sua grade.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/chamada.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/chamada.png",
     video: null,
     github: "https://github.com/KaiqueBM/Sistema-De-Chamada-De-Sala",
     project: null,
@@ -70,7 +73,8 @@ const dataPosts = [
     title: "Valorant - Database",
     description:
       "Essa aplicação foi construida em React utilizando Typescript e Tailwind, além do Axios para fazer a conexão com a API da database do Valorant, mostrando assim todos os cosméticos e coleções do jogo além dos mapas. Pode também consultar todas as informações dos agentes do jogo.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/valorant.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/valorant.png",
     video: "https://www.youtube.com/embed/mEiXPhmVFvc",
     github: "https://github.com/KaiqueBM/valorant_database_items",
     project: "https://valorant-database.netlify.app/",
@@ -94,7 +98,8 @@ const dataPosts = [
     title: "NLW - Ecoleta",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed iaculis tellus at diam.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/ecoleta.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/ecoleta.png",
     video: null,
     github: null,
     project: null,
@@ -115,7 +120,8 @@ const dataPosts = [
     title: "Monte seu hamburger",
     description:
       "Essa aplicação foi feito durante um curso colocando em prática os conceitos aprendidos de Vue.js. É um sistema crud basicamente, você consegue montar seu pedido e gerenciar todos os pedidos em uma outra página.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/burger.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/burger.png",
     video: "https://www.youtube.com/embed/m6bqryWxF1M",
     github: "https://github.com/KaiqueBM/Make-Your-Burger",
     project: null,
@@ -136,7 +142,8 @@ const dataPosts = [
     title: "Ferragens Piratininga",
     description:
       "Foi desenvolvido um site em Wordpress para a empresa Ferragens Piratininga, utilizando bastante PHP e Javascript. Como eles vendem produtos, todo o script teve que ser feito em torno do plugin WooCommerce.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/ferragens.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/ferragens.png",
     video: null,
     github: null,
     project: "http://www.ferragenspiratininga.com.br/",
@@ -155,12 +162,14 @@ const dataPosts = [
       },
     ],
   },
+
   {
     id: 7,
     title: "Clima do tempo",
     description:
       "Essa aplicação foi desenvolvida baseada no #BoraCodar da Rocketseat. Fora alguns ajustes responsivos, consumi duas APIs para alimentar o projeto, um em relação a previsão do tempo e outra da qualidade do ar. Além disso fiz um scriptizinho de Geolocalização onde o usuário pode permitir pegar a localização dele para retornar o clima naquela região. O app muda também a cor de acordo com o horário do dia.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/clima.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/clima.png",
     video: null,
     github: "https://github.com/KaiqueBM/Clima-em-React",
     project: "https://clima-do-tempo.netlify.app/",
@@ -173,7 +182,7 @@ const dataPosts = [
       },
       {
         name: "Axios",
-      }
+      },
     ],
   },
   {
@@ -231,7 +240,8 @@ const dataPosts = [
     title: "FPVD",
     description:
       "Foi desenvolvido um site para a Federação Paulista de Voleibol para deficientes utilizando Wordpress, PHP e Javascript. Consegue ver as notícias mais recentes, todas as informações sobre a Federação, ver os clubes que participam da liga, os árbitros e até os projetos incetivados.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/fpvd.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/fpvd.png",
     video: "https://www.youtube.com/embed/t_MKLTLmM7U",
     github: null,
     project: null,
@@ -252,7 +262,8 @@ const dataPosts = [
     title: "NLW Spacetime - Cápsula do tempo",
     description:
       "Essa aplicação foi desenvolvida durante a NLW SPACETIME realizada pela Rockseat. Foi utilizado Next.js, typescript, tailwind, node.js, fastify, axios e React Native. É uma aplicação na qual você loga com o seu github e consegue fazer publicações de lembranças, sendo textos, imagens ou até videos. Há também uma opção para deixar a publicação pública, caso contrário, só você conseguirá visualizar a sua publicação.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/spacetime.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/spacetime.png",
     video: null,
     github: "https://github.com/KaiqueBM/nlw-spacetime",
     project: null,
@@ -295,7 +306,8 @@ const dataPosts = [
     title: "Yappi",
     description:
       "Aplicação criada para a empresa Yappi. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap, jQuery e Ajax. Além do blog, foi desenvolvido uma calculadora de juros composto, precisando criar um back end interno no WP, utilizando o Ajax para realizar a chamada.",
-    image: "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/yappi.png",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/yappi.png",
     video: "https://www.youtube.com/embed/GfNgF_zNnb0",
     github: null,
     project: "https://yappi.com.br/",

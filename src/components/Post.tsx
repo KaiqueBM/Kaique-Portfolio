@@ -1,17 +1,7 @@
 import { Fragment, useState } from "react";
-import {
-  BsGithub,
-  BsYoutube,
-  BsLaptopFill,
-  BsXOctagon,
-  BsPlusLg,
-} from "react-icons/bs";
+import { BsGithub, BsYoutube, BsLaptopFill, BsXOctagon } from "react-icons/bs";
 
-import {
-  Dialog,
-  DialogHeader,
-  DialogBody,
-} from "@material-tailwind/react";
+import { Dialog, DialogHeader, DialogBody } from "@material-tailwind/react";
 
 interface PropsPosts {
   props: {
@@ -42,35 +32,19 @@ const Post = (posts: PropsPosts) => {
   const handleOpen = () => setOpen(!open);
 
   return (
-    <div className="xl:w-2/6 md:w-3/6 w-full md:p-3 pt-3 pb-3 rounded-t-xl hover:transform hover:scale-105 transition duration-500">
+    <div className="xl:w-3/12 md:w-3/6 w-full md:p-3 pt-3 pb-3 rounded-t-lg hover:transform hover:scale-105 transition duration-500">
       <Fragment>
-        <div className="relative">
-          <div
-            onClick={handleOpen}
-            className="font-poppins font-semibold absolute right-0 bg-white text-black p-2 rounded-xl mt-2 mr-2 border-2 border-black hover:bg-black hover:text-white transition cursor-pointer flex flex-row"
-          >
-            <span className="pt-1 mr-2">
-              <BsPlusLg />
-            </span>
-            MAIS DETALHES{" "}
-          </div>
-
+        <div className="relative" onClick={handleOpen}>
           <img
-            className="w-full rounded-t-xl border-b-4 border-gray-800"
+            className="w-full rounded-t-md border-b-4 border-gray-800"
             src={props.image}
           />
         </div>
-        <div className="bg-white text-center p-2 text-xl uppercase text-black font-overpass font-semibold">
+        <div className="bg-white text-right p-2 text-xl uppercase text-black font-overpass font-semibold">
           {props.title}
         </div>
-        <div className="bg-white text-right p-2 text-sm rounded-b-xl uppercase flex flex-row flex-wrap justify-end -mt-0.5">
-          {tags.map((tag: PropsTags, index: number) => (
-            <div key={index} className="md:mb-2 mb-3">
-              <span className="font-poppins font-light bg-white text-black border-2 border-black pl-3 pr-3 rounded-xl ml-1 mr-1 hover:bg-black hover:text-white transition cursor-pointer">
-                {tag.name}
-              </span>
-            </div>
-          ))}
+        <div className="bg-white text-black text-right p-2 text-sm/[4px] rounded-b-lg uppercase flex flex-row flex-wrap justify-end -mt-0.5 pb-5 hover:font-semibold transition duration-300">
+          + mais detalhes
         </div>
 
         <Dialog

@@ -29,17 +29,13 @@ interface Posts {
 }
 [];
 
-
-
 function Home() {
-  
-  const [morePosts, setMorePosts] = useState<number>(5);
+  const [morePosts, setMorePosts] = useState<number>(7);
   const [changeButton, setChangeButton] = useState<string>("flex");
-  function updatePosts(){
-    setMorePosts(morePosts+3)
-    if(morePosts > (posts.length-3))
-    {
-      setChangeButton("none")
+  function updatePosts() {
+    setMorePosts(morePosts + 4);
+    if (morePosts > posts.length - 4) {
+      setChangeButton("none");
     }
   }
   return (
@@ -70,27 +66,30 @@ function Home() {
             </div>
 
             <div className="flex flex-row flex-wrap ml-5 mr-5 justify-center">
-              {posts.map((post: Posts, index: number) => (
-                (index <= morePosts && (<Post key={index} props={post} />))
-              ))}
+              {posts.map(
+                (post: Posts, index: number) =>
+                  index <= morePosts && <Post key={index} props={post} />
+              )}
             </div>
           </>
         </Slide>
 
         <div className="flex justify-center pb-10 pt-5">
-            <button onClick={updatePosts} style={{"display": changeButton}} className="font-poppins bg-white p-2 pl-5 pr-5 rounded-xl border-2 border-black text-black ml-2 hover:bg-black hover:text-white transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
-              LISTAR MAIS PROJETOS
-            </button>
-            <a href="https://github.com/KaiqueBM?tab=repositories">
+          <button
+            onClick={updatePosts}
+            style={{ display: changeButton }}
+            className="font-poppins bg-white p-2 pl-5 pr-5 rounded-xl border-2 border-black text-black ml-2 hover:bg-black hover:text-white transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center"
+          >
+            LISTAR MAIS PROJETOS
+          </button>
+          <a href="https://github.com/KaiqueBM?tab=repositories">
             <button className="font-poppins bg-white p-2 pl-5 pr-5 rounded-xl border-2 border-black text-black ml-2 hover:bg-black hover:text-white transition cursor-pointer md:inline-block block md:mt-0 mt-2 text-center">
               VER MAIS PROJETOS NO GITHUB
             </button>
           </a>
         </div>
 
-        <div className="flex justify-center pb-10 pt-5">
-         
-        </div>
+        <div className="flex justify-center pb-10 pt-5"></div>
       </div>
 
       <Cursos />
