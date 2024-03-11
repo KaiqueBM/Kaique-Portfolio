@@ -36,14 +36,17 @@ const Post = (posts: PropsPosts) => {
       <Fragment>
         <div className="relative" onClick={handleOpen}>
           <img
-            className="w-full rounded-t-md border-b-4 border-gray-800"
+            className="w-full rounded-t-md border-b-4 border-gray-800 cursor-pointer"
             src={props.image}
           />
         </div>
         <div className="bg-white text-right p-2 text-xl uppercase text-black font-overpass font-semibold">
           {props.title}
         </div>
-        <div className="bg-white text-black text-right p-2 text-sm/[4px] rounded-b-lg uppercase flex flex-row flex-wrap justify-end -mt-0.5 pb-5 hover:font-semibold transition duration-300">
+        <div
+          onClick={handleOpen}
+          className="bg-white cursor-pointer text-black text-right p-2 text-sm/[4px] rounded-b-lg uppercase flex flex-row flex-wrap justify-end -mt-0.5 pb-5 hover:font-semibold transition duration-300"
+        >
           + mais detalhes
         </div>
 
