@@ -15,12 +15,14 @@ const Sobre = () => {
           />
         </div>
         <div className="w-10/12 ml-5 mr-5 text-lg text-justify font-overpass font-light">
-          Sou um desenvolvedor de software com experiência na parte do front end
-          utilizando React.js, TypeScript, Tailwind CSS e consumo de APIs REST.
-          Também possuo experiência no back end utilizando Python, Node.js e
-          Python, além de banco de dados como MongoDB e MySQL. Atualmente
-          trabalho na área em uma startup, arquitetando e colaborando com a
-          equipe em projetos relacionados ao marketing digital.
+          Atualmente sou Engenheiro de Dados onde trabalho em tratamento
+          estatístico de dados, data mining e desenvolvimento de modelagens
+          preditivas usando Python e SQL. Possuo também experiência no Front end
+          com React.js, JavaScript, TypeScript, Tailwind CSS e consumo de APIs
+          REST.Na parte do Back end já desenvolvi projetos utilizando Node.js,
+          C# e Java. <br></br>
+          <br></br>Busco desafios visando desenvolvimento profissional,
+          apaixonado em criar novas soluções com o uso da tecnologia.
         </div>
       </div>
       <div className="flex sm:flex-row flex-col sm:justify-evenly justify-center sm:ml-0 ml-10 mt-10">
@@ -33,7 +35,7 @@ const Sobre = () => {
           <div className="border-l-4 pl-3 mb-5">
             <span className="uppercase text-xl font-semibold">Nascimento:</span>{" "}
             <br />
-            <span className="font-light">01/03/2000 - 23 anos</span>
+            <span className="font-light">01/03/2000 - 24 anos</span>
           </div>
           <div className="border-l-4 pl-3 mb-5">
             <span className="uppercase text-xl font-semibold">Local: </span>{" "}

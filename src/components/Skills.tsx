@@ -36,7 +36,7 @@ const skills = [
     nivel: 2,
   },
   {
-    name: "React",
+    name: "React.js",
     nivel: 2,
   },
   {
@@ -53,7 +53,7 @@ const skills = [
   },
   {
     name: "Tailwind",
-    nivel: 2,
+    nivel: 3,
   },
   {
     name: "Styled-components",
@@ -73,7 +73,7 @@ const skills = [
   },
   {
     name: "Node.js",
-    nivel: 3,
+    nivel: 2,
   },
   {
     name: "C#",
@@ -81,7 +81,7 @@ const skills = [
   },
   {
     name: "Python",
-    nivel: 2,
+    nivel: 3,
   },
   {
     name: "MongoDB",
@@ -129,7 +129,6 @@ const Skills = () => {
             </Popover>
           </Fragment>
         </div>
-        
 
         <div className="flex flex-row flex-wrap container mx-auto justify-center text-xl text-white mb-5 font-roboto">
           {skills.map((skill: Skills, index: number) => (

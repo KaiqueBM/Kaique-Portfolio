@@ -68,31 +68,7 @@ const dataPosts = [
       },
     ],
   },
-  {
-    id: 3,
-    title: "Valorant - Database",
-    description:
-      "Essa aplicação foi construida em React utilizando Typescript e Tailwind, além do Axios para fazer a conexão com a API da database do Valorant, mostrando assim todos os cosméticos e coleções do jogo além dos mapas. Pode também consultar todas as informações dos agentes do jogo.",
-    image:
-      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/valorant.png",
-    video: "https://www.youtube.com/embed/mEiXPhmVFvc",
-    github: "https://github.com/KaiqueBM/valorant_database_items",
-    project: "https://valorant-database.netlify.app/",
-    tags: [
-      {
-        name: "React",
-      },
-      {
-        name: "TS",
-      },
-      {
-        name: "Axios",
-      },
-      {
-        name: "Tailwind",
-      },
-    ],
-  },
+
   {
     id: 4,
     title: "NLW - Ecoleta",
@@ -188,7 +164,103 @@ const dataPosts = [
       },
     ],
   },
+  {
+    id: 13,
+    title: "Yappi",
+    description:
+      "Aplicação criada para a empresa Yappi. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap, jQuery e Ajax. Além do blog, foi desenvolvido uma calculadora de juros composto, precisando criar um back end interno no WP, utilizando o Ajax para realizar a chamada.",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/yappi.png",
+    video: "https://www.youtube.com/embed/GfNgF_zNnb0",
+    github: null,
+    project: "https://yappi.com.br/",
+    tags: [
+      {
+        name: "JS",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "Ajax",
+      },
+      {
+        name: "WP",
+      },
+    ],
+  },
 
+  {
+    id: 21,
+    title: "NB Comércio",
+    description:
+      "Aplicação criada para a empresa NB Comércio. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap e Jquery.",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/nbcomercio.png",
+    video: null,
+    github: null,
+    project: "https://nbcomercio.com.br/",
+    tags: [
+      {
+        name: "JS",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "WP",
+      },
+    ],
+  },
+
+  {
+    id: 20,
+    title: "Empreendimentos Anima",
+    description:
+      "Aplicação criada para a empresa Empreendimentos Anima. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap e Jquery.",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/anima.png",
+    video: null,
+    github: null,
+    project: "https://empreendimentosanima.com.br/",
+    tags: [
+      {
+        name: "JS",
+      },
+      {
+        name: "PHP",
+      },
+      {
+        name: "WP",
+      },
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Valorant - Database",
+    description:
+      "Essa aplicação foi construida em React utilizando Typescript e Tailwind, além do Axios para fazer a conexão com a API da database do Valorant, mostrando assim todos os cosméticos e coleções do jogo além dos mapas. Pode também consultar todas as informações dos agentes do jogo.",
+    image:
+      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/valorant.png",
+    video: "https://www.youtube.com/embed/mEiXPhmVFvc",
+    github: "https://github.com/KaiqueBM/valorant_database_items",
+    project: "https://valorant-database.netlify.app/",
+    tags: [
+      {
+        name: "React",
+      },
+      {
+        name: "TS",
+      },
+      {
+        name: "Axios",
+      },
+      {
+        name: "Tailwind",
+      },
+    ],
+  },
   {
     id: 7,
     title: "Clima do tempo",
@@ -324,31 +396,6 @@ const dataPosts = [
       },
       {
         name: "Tailwind",
-      },
-    ],
-  },
-  {
-    id: 13,
-    title: "Yappi",
-    description:
-      "Aplicação criada para a empresa Yappi. Foi feito em Wordpress utilizando HTML, CSS, Javascript, PHP, Bootstrap, jQuery e Ajax. Além do blog, foi desenvolvido uma calculadora de juros composto, precisando criar um back end interno no WP, utilizando o Ajax para realizar a chamada.",
-    image:
-      "https://raw.githubusercontent.com/KaiqueBM/kaique-portfolio/master/assets/yappi.png",
-    video: "https://www.youtube.com/embed/GfNgF_zNnb0",
-    github: null,
-    project: "https://yappi.com.br/",
-    tags: [
-      {
-        name: "JS",
-      },
-      {
-        name: "PHP",
-      },
-      {
-        name: "Ajax",
-      },
-      {
-        name: "WP",
       },
     ],
   },

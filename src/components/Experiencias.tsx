@@ -25,10 +25,30 @@ const Experiencias = () => {
 
         <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
           <div>
+            <span className="font-semibold">MANAGEMENT SOLUTIONS</span> -
+            Empresa de consultoria
+          </div>
+          <div>Consultor A1 de Data Science | Nov/2023 - Atualmente</div>
+          <div>+ Tratamento estatístico de dados e data mining;</div>
+          <div>
+            + Desenvolvimento de soluções eficientes utilizando Python e SQL;
+          </div>
+          <div>
+            + Modelagem preditiva utilizando técnicas avançadas de machine
+            learning e data science;
+          </div>
+          <div>
+            + Revisão e validação de modelos de rating, scoring, RAROC e
+            parâmetros de risco.
+          </div>
+        </div>
+
+        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
+          <div>
             <span className="font-semibold">NOT A STARTUP</span> - Startup de
             marketing digital
           </div>
-          <div>Desenvolvedor de software | Mar/2023 - Atualmente</div>
+          <div>Desenvolvedor de software | Mar/2023 - Nov/2023</div>
           <div>+ Implementação e manutenção do banco de dados com MongoDB;</div>
           <div>
             + Automatizando e integrando soluções com Python, Javascript e N8N,

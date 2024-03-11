@@ -12,6 +12,32 @@ const Cursos = () => {
 
         <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mt-5 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
           <div>
+            <span className="font-semibold">
+              Santander Bootcamp 2023 - Backend Java
+            </span>
+            - DIO
+          </div>
+          <div>Ago/2023 - Out/2023</div>
+          <div>+ Conceitos de Java;</div>
+          <div>
+            + Estruturas de dados, programação orientada a objetos, bancos de
+            dados SQL e NoSQL;
+          </div>
+          <div>
+            + Desenvolvimento com Spring Boot e teste unitários com JUnit.
+          </div>
+        </div>
+
+        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
+          <div>
+            <span className="font-semibold">AI for Devs</span>- Rocketseat
+          </div>
+          <div>Ago/2023 - Ago/2023</div>
+          <div>+ Introdução a inteligência artificial na programação.</div>
+        </div>
+
+        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
+          <div>
             <span className="font-semibold">7° Workshop Outsystems</span>- Sys
             manager
           </div>
