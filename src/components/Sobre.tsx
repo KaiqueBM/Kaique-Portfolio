@@ -15,12 +15,12 @@ const Sobre = () => {
           />
         </div>
         <div className="w-10/12 ml-5 mr-5 text-lg text-justify font-overpass font-light">
-          Atualmente sou Engenheiro de Dados onde trabalho em tratamento
-          estatístico de dados, data mining e desenvolvimento de modelagens
-          preditivas usando Python e SQL. Possuo também experiência no Front end
-          com React.js, JavaScript, TypeScript, Tailwind CSS e consumo de APIs
-          REST.Na parte do Back end já desenvolvi projetos utilizando Node.js,
-          C# e Java. <br></br>
+          Atualmente estou como consultor de data science onde trabalho em
+          tratamento estatístico de dados, data mining e desenvolvimento de
+          modelagens preditivas usando Python e SQL. Possuo também experiência
+          no Front end com React.js, JavaScript, TypeScript, Tailwind CSS e
+          consumo de APIs REST.Na parte do Back end já desenvolvi projetos
+          utilizando Node.js, C# e Java. <br></br>
           <br></br>Busco desafios visando desenvolvimento profissional,
           apaixonado em criar novas soluções com o uso da tecnologia.
         </div>
