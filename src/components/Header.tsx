@@ -18,7 +18,7 @@ const Header = () => {
             Kaique Miranda
           </div>
           <div className="pb-2 pt-2 font-poppins text-center">
-            Engenheiro de software
+            Desenvolvedor de software
           </div>
           <div className="flex lg:flex-row flex-col flex-wrap xl:text-2xl text-center text-base">
             <a href={CV} download>

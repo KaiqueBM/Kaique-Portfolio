@@ -61,7 +61,7 @@ const Experiencias = () => {
           </div>
         </div>
 
-        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-5 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
+        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-10 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
           <div>
             <span className="font-semibold">OLX BRASIL</span> - Empresa de
             classificados
@@ -79,25 +79,6 @@ const Experiencias = () => {
           </div>
           <div>+ Administração de projetos e gerenciamentos de atividades;</div>
           <div>+ Relacionamento com clientes.</div>
-        </div>
-
-        <div className="font-overpass font-light bg-slate-100 border-l-4 border-sky-900 p-3 mb-10 lg:w-6/12 w-11/12 rounded-r-lg shadow-md hover:bg-sky-900 hover:text-white hover:border-slate-100 transition duration-500">
-          <div>
-            <span className="font-semibold">ONLAB STUDIO</span> - Agência de
-            marketing e desenvolvimento de aplicações
-          </div>
-          <div>
-            Estágio em desenvolvimento web frontend | Ago/2021 - Nov/2021
-          </div>
-          <div>
-            + Criação e desenvolvimento de sites responsivos (HTML, CSS,
-            Javascript, Bootstrap, React);
-          </div>
-          <div>
-            + Desenvolvimento de temas para sites em Wordpress (PHP, Javascript,
-            Ajax, jQuery);
-          </div>
-          <div>+ Manutenção e otimizações em páginas de WP.</div>
         </div>
       </div>
     </div>
